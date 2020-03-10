@@ -7,7 +7,7 @@
             <h1 class="title is-1 is-bold home-elements">Welcome!</h1>
             <h2
               class="subtitle is-3 home-elements"
-            >The Mayan Archive can help you discover Mayan Glyphs</h2>
+            >The Maya Database and Archive can help you discover Maya Glyphs</h2>
 
             <a
               class="home-elements button is-full is-warning is-rounded is-large"

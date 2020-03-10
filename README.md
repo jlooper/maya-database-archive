@@ -1,4 +1,4 @@
-# Mayan Archive
+# Maya Hieroglyphic Database and Archive
 
 ## Project setup
 

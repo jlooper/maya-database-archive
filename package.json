@@ -1,5 +1,5 @@
 {
-	"name": "mayanarchive",
+	"name": "mayaHieroglyphDatabase",
 	"version": "0.1.0",
 	"private": true,
 	"main": "./src/assets/sass/styles.scss",
