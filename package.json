@@ -5,7 +5,7 @@
 	"main": "./src/assets/sass/styles.scss",
 	"scripts": {
 		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build",
+		"build": "npm run css-build && vue-cli-service build",
 		"lint": "vue-cli-service lint",
 		"css-build": "node-sass --omit-source-map-url ./src/assets/sass/styles.scss ./public/css/styles.css",
 		"css-watch": "npm run css-build -- --watch",
