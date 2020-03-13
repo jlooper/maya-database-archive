@@ -9,8 +9,14 @@ export default new Vuex.Store({
 		user: null,
 	},
 	//plugins: [createPersistedState()],
-	mutations: {},
+	mutations: {
+		setUser: (state, user) => {
+			state.user = user;
+		},
+	},
 	actions: {
-		//bindings to collections
+		setUser({ commit }, user) {
+			commit('setUser', user);
+		},
 	},
 });
