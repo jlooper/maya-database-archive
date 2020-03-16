@@ -1,6 +1,6 @@
 # Maya Hieroglyphic Database and Archive
 
-A joint project between Azure Cloud Advocates and Cal State Chico
+A joint project between Azure Cloud Advocates and Cal State Chico. Frontend built with Vue.js with Auth0 authentication, backend in CosmosDB
 
 ## Project setup
 
