@@ -9,9 +9,7 @@
 							The Maya Database and Archive can help you discover Maya Glyphs
 						</h2>
 
-						<button class="button is-large is-warning" @click="login">
-							Log in to Save Searches
-						</button>
+						<router-link class="button is-large is-warning" :to="'search'">Search the Database</router-link>
 					</div>
 
 					<div class="column is-half is-centered">
@@ -79,11 +77,7 @@ export default {
 	data() {
 		return {};
 	},
-	methods: {
-		login() {
-			this.$auth.login();
-		},
-	},
+	methods: {},
 };
 </script>
 
