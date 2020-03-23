@@ -6,7 +6,7 @@ let webAuth = new auth0.WebAuth({
 	domain: 'mayadbarchive.auth0.com',
 	clientID: 'qlXE2ygJGovPoP7spmsuAexcHYorVCSv',
 	// make sure this line is contains the port: 8080
-	redirectUri: 'https://maya-database-archive.azurewebsites.net/callback',
+	redirectUri: 'https://maya-db.netlify.com/callback',
 	// we will use the api/v2/ to access the user information as payload
 	audience: 'https://' + 'mayadbarchive.auth0.com' + '/api/v2/',
 	responseType: 'token id_token',
@@ -54,13 +54,13 @@ let auth = new Vue({
 			webAuth.authorize();
 		},
 		logout() {
-			return new Promise((resolve, reject) => {
+			return new Promise(() => {
 				localStorage.removeItem('access_token');
 				localStorage.removeItem('id_token');
 				localStorage.removeItem('expires_at');
 				localStorage.removeItem('user');
 				webAuth.logout({
-					returnTo: 'https://maya-database-archive.azurewebsites.net/login', // Allowed logout URL listed in dashboard
+					returnTo: 'http://localhost:8080/login', // Allowed logout URL listed in dashboard
 					clientID: 'qlXE2ygJGovPoP7spmsuAexcHYorVCSv', // Your client ID
 				});
 			});
