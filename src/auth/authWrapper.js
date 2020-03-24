@@ -35,7 +35,6 @@ export const useAuth0 = ({
 					this.isAuthenticated = await this.auth0Client.isAuthenticated();
 					this.error = null;
 				} catch (e) {
-					console.error(e);
 					this.error = e;
 				} finally {
 					this.popupOpen = false;

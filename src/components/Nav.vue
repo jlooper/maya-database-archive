@@ -85,7 +85,7 @@ export default {
       // have to do this nonsense to make sure auth0Client is ready
       var instance = getInstance();
       instance.$watch("loading", loading => {
-        if (loading === false) {
+        if (!loading) {
           fn(instance);
         }
       });
