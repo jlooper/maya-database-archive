@@ -5,6 +5,7 @@
         <span class="navbar-item logo">
           <img src="/images/logo.png" />
         </span>
+        <span class="navbar-item is-size-3">Maya Hieroglyphic Database and Archive</span>
       </a>
       <a
         id="burger"
