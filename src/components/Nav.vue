@@ -22,11 +22,11 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <router-link class="navbar-item has-text-white" :to="'about'">About</router-link>
-          <span v-if="!$auth.isAuthenticated && !$auth.loading" class="nav-item">
+          <span v-if="!$auth.isAuthenticated">
             <button id="qsLoginBtn" class="button is-warning" @click.prevent="login">Login</button>
           </span>
 
-          <span v-if="$auth.isAuthenticated" class="nav-item">
+          <span v-if="$auth.isAuthenticated">
             <router-link :to="'profile'" class="navbar-item has-text-white">Profile</router-link>
             <button id="qsLogoutBtn" class="button is-warning" @click.prevent="logout">Logout</button>
           </span>
