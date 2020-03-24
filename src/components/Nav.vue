@@ -25,7 +25,7 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <router-link class="navbar-item" :to="'about'">About</router-link>
-          <span v-if="!$auth.isAuthenticated && loadAuth">
+          <span v-if="!$auth.isAuthenticated">
             <button id="qsLoginBtn" class="button is-warning" @click.prevent="login">Login</button>
           </span>
 
