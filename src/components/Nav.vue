@@ -32,6 +32,24 @@
             <router-link :to="'profile'" class="navbar-item">Profile</router-link>
             <button id="qsLogoutBtn" class="button is-warning" @click.prevent="logout">Logout</button>
           </span>
+          <span class="navbar-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>Language</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">English</a>
+                  <a class="dropdown-item">Español</a>
+                </div>
+              </div>
+            </div>
+          </span>
         </div>
       </div>
     </div>
