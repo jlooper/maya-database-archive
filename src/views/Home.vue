@@ -1,56 +1,99 @@
-<template web>
-	<main class="column is-four-fifths main">
-		<div class="box main-content">
-			<h1 class="title is-size-3">Welcome</h1>
-			<div>
-				<img :src="$auth.user.picture" />
-				<h2>{{ $auth.user.name }}</h2>
-				<p>{{ $auth.user.email }}</p>
-			</div>
+<template>
+	<div>
+		<section class="hero">
+			<div class="hero-body">
+				<div class="columns is-vcentered">
+					<div class="column is-half is-offset-1 is-centered home-elements">
+						<h1 class="title is-1 is-bold home-elements">Welcome!</h1>
+						<h2 class="subtitle is-3 home-elements">
+							The Maya Database and Archive can help you discover Maya Glyphs
+						</h2>
 
-			<div>
-				<pre>{{ JSON.stringify($auth.user, null, 2) }}</pre>
+						<router-link class="button is-large is-warning" :to="'search'">Search the Database</router-link>
+					</div>
+
+					<div class="column is-half is-centered">
+						<img src="../assets/home-glyph.jpg" />
+					</div>
+				</div>
 			</div>
-		</div>
-	</main>
+		</section>
+
+		<section class="section has-background-white-ter is-full">
+			<div class="container">
+				<div class="content-wrapper">
+					<div class="columns">
+						<div class="column">
+							<div class="card has-text-centered">
+								<p class="title is-4">Learn</p>
+								<div class="card-icon">
+									<img src="../assets/3.png" />
+								</div>
+								<div class="card-text">
+									<p>
+										Learn about the various glyphs that make up the Mayan language, how they fit
+										together, and how they are altered depending on context.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card has-text-centered">
+								<p class="title is-4">Search</p>
+								<div class="card-icon">
+									<img src="../assets/2.png" />
+								</div>
+								<div class="card-text">
+									<p>
+										Search for instances of glyphs using maps and tagged searches. Discover where
+										artifacts originated and where they are currently stored.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card has-text-centered">
+								<p class="title is-4">Save</p>
+								<div class="card-icon">
+									<img src="../assets/1.png" />
+								</div>
+								<div class="card-text">
+									<p>
+										Save your favorite searches by creating an account. Login, and research your
+										areas of interest.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 </template>
-
 <script>
-//import { mapState } from 'vuex';
 export default {
-	name: 'landing',
-	computed: {
-		//...mapState(['user']),
+	name: 'app',
+	data() {
+		return {};
 	},
-
-	methods: {
-		//...mapActions(["fetchUser", "fetchStudents", "fetchPractices"]),
-	},
-
-	created() {
-		/*this.fetchUser(this.currentUser.uid)*/
-	},
+	methods: {},
 };
 </script>
+
 <style scoped>
-.box {
-	margin: 5px;
-}
 .card {
-	background-color: transparent;
-	box-shadow: none;
-}
-.card-content {
-	padding: 1px;
-}
-.card-footer-item:not(:last-child) {
-	border: none;
-}
-.card-footer {
-	padding-top: 5px;
+	border-radius: 5px;
 	margin: 5px;
+	padding: 10px;
+	height: 100%;
 }
-h3 {
-	padding-bottom: 20px;
+
+.card-text,
+.title {
+	padding-top: 10px;
+}
+.content-wrapper {
+	padding-bottom: 10px;
 }
 </style>

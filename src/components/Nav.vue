@@ -1,9 +1,9 @@
 <template web>
 	<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-			<a class="navbar-item" href="./"></a>
-			<span class="navbar-item is-size-3 has-text-white">Maya Hieroglyphic Database and Archive</span>
-
+			<a class="navbar-item" href="./">
+				<span class="navbar-item is-size-3 has-text-white">Maya Hieroglyphic Database and Archive</span>
+			</a>
 			<a
 				id="burger"
 				role="button"
@@ -34,7 +34,7 @@
 								<img
 									:src="$auth.user.picture"
 									alt="User's profile picture"
-									class="nav-user-profile rounded-circle"
+									class="is-circle"
 									width="50"
 								/>
 							</a>
@@ -43,9 +43,9 @@
 								<router-link to="/profile" class="dropdown-item dropdown-profile">
 									<font-awesome-icon class="mr-3" icon="user" />Profile
 								</router-link>
-								<a id="qsLogoutBtn" href="#" class="dropdown-item" @click.prevent="logout">
-									<font-awesome-icon class="mr-3" icon="power-off" />Log out
-								</a>
+								<button id="qsLogoutBtn" class="button is-warning" @click.prevent="logout">
+									Logout
+								</button>
 							</div>
 						</span>
 					</div>
@@ -66,7 +66,10 @@ export default {
 
 	methods: {
 		login() {
-			this.$auth.loginWithRedirect();
+			this.$auth.loginWithRedirect().then(res => {
+				console.log(res);
+				this.$router.push({ path: '/profile' });
+			});
 		},
 		logout() {
 			this.$auth.logout();
@@ -95,5 +98,9 @@ export default {
 }
 .wrapper {
 	flex: 1;
+}
+
+a.navbar-item:hover {
+	background-color: transparent;
 }
 </style>

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Login from '@/views/Login.vue';
+import Profile from '@/views/Profile.vue';
 import About from '@/views/About.vue';
 import Home from '@/views/Home.vue';
 import ErrorView from '@/views/404.vue';
@@ -13,18 +13,18 @@ const router = new Router({
 	mode: 'history',
 	base: process.env.BASE_URL,
 	routes: [
-		{
+		/*{
 			path: '*',
 			component: ErrorView,
 		},
 		{
 			path: '/',
 			redirect: '/login',
-		},
+		},*/
 		{
-			path: '/login',
-			name: 'login',
-			component: Login,
+			path: '/',
+			name: 'home',
+			component: Home,
 		},
 
 		{
@@ -33,9 +33,9 @@ const router = new Router({
 			component: About,
 		},
 		{
-			path: '/home',
-			name: 'home',
-			component: Home,
+			path: '/profile',
+			name: 'profile',
+			component: Profile,
 			beforeEnter: authGuard,
 		},
 	],
