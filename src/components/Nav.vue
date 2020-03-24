@@ -21,32 +21,23 @@
 		<div id="menu" class="navbar-menu">
 			<div class="navbar-end">
 				<div class="navbar-item">
-					<router-link class="navbar-item has-text-white" :to="'about'">About</router-link>
-
 					<div class="buttons">
+						<router-link class="navbar-item has-text-white" :to="'about'">About</router-link>
 						<span v-if="!$auth.isAuthenticated && !$auth.loading" class="nav-item">
 							<button id="qsLoginBtn" class="button is-warning" @click.prevent="login">
 								Login
 							</button>
 						</span>
-						<span class="nav-item dropdown" v-if="$auth.isAuthenticated">
-							<a class="nav-link dropdown-toggle" href="#" id="profileDropDown" data-toggle="dropdown">
-								<img
-									:src="$auth.user.picture"
-									alt="User's profile picture"
-									class="is-circle"
-									width="50"
-								/>
-							</a>
-							<div class="dropdown-menu dropdown-menu-right">
-								<div class="dropdown-header">{{ $auth.user.name }}</div>
-								<router-link to="/profile" class="dropdown-item dropdown-profile">
-									<font-awesome-icon class="mr-3" icon="user" />Profile
-								</router-link>
-								<button id="qsLogoutBtn" class="button is-warning" @click.prevent="logout">
-									Logout
-								</button>
-							</div>
+					</div>
+
+					<div class="buttons">
+						<span v-if="$auth.isAuthenticated" class="nav-item">
+							<router-link :to="'profile'" class="navbar-item has-text-white">
+								Profile
+							</router-link>
+							<button id="qsLogoutBtn" class="button is-warning" @click.prevent="logout">
+								Logout
+							</button>
 						</span>
 					</div>
 				</div>
