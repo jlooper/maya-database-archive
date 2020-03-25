@@ -1,12 +1,12 @@
 <template web>
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="./">
+      <router-link class="navbar-item" :to="'./'">
         <span class="navbar-item logo">
           <img src="/images/logo.png" />
         </span>
         <span class="navbar-item is-size-3">Maya Hieroglyphic Database and Archive</span>
-      </a>
+      </router-link>
       <a
         id="burger"
         role="button"
@@ -30,7 +30,6 @@
           </span>
 
           <span v-if="$auth.isAuthenticated">
-            <router-link :to="'profile'" class="navbar-item">Profile</router-link>
             <button id="qsLogoutBtn" class="button is-warning" @click.prevent="logout">Logout</button>
           </span>
           <span class="navbar-item">
