@@ -6,7 +6,7 @@
         <h1 class="title has-text-centered">Sorry, friend, you're in the wrong place!</h1>
         <div class="card-image has-text-centered">
           <figure class="image is-inline-block">
-            <img src="../assets/gods.jpg" />
+            <img src="../assets/god.png" />
           </figure>
         </div>
         <p class="has-text-centered is-size-4">

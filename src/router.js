@@ -5,6 +5,8 @@ import Profile from '@/views/Profile.vue';
 import About from '@/views/About.vue';
 import Home from '@/views/Home.vue';
 import Search from '@/views/Search.vue';
+import Error from '@/views/404.vue';
+
 import { authGuard } from '@/auth';
 
 Vue.use(Router);
@@ -35,6 +37,11 @@ const router = new Router({
 			name: 'profile',
 			component: Profile,
 			beforeEnter: authGuard,
+		},
+		{
+			path: '/error',
+			name: 'error',
+			component: 404,
 		},
 	],
 });

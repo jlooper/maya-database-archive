@@ -3,20 +3,14 @@
     <nav class="menu">
       <ul class="menu-list">
         <li>
-          <router-link class="navbar-item" :to="'/home'">
-            <i class="fas fa-headphones"></i> 1
+          <router-link class="navbar-item" :to="'/profile'">
+            <i class="fas fa-user"></i>My Profile
           </router-link>
         </li>
 
         <li>
-          <router-link class="navbar-item" :to="'/practice'">
-            <i class="fas fa-music"></i> 2
-          </router-link>
-        </li>
-
-        <li>
-          <router-link class="navbar-item" :to="'/settings'">
-            <i class="fa fa-cog"></i> 3
+          <router-link class="navbar-item" :to="'/search'">
+            <i class="fas fa-search"></i>Search
           </router-link>
         </li>
       </ul>
@@ -25,10 +19,10 @@
 </template>
 
 <script>
-import { mapState, mapActions } from "vuex";
+//import { mapState, mapActions } from "vuex";
 export default {
   computed: {
-    ...mapState(["user"])
+    //...mapState(["user"])
   },
   data: () => ({
     //currentUser: firebase.auth().currentUser,
