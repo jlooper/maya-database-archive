@@ -10,7 +10,7 @@
           </figure>
         </div>
         <p class="has-text-centered is-size-4">
-          <router-link to="/home">Go Home</router-link>
+          <router-link to="./">Go Home</router-link>
         </p>
       </div>
     </div>
@@ -26,3 +26,12 @@ p {
   justify-content: center;
 }
 </style>
+<script>
+export default {
+  data() {
+    return {
+      //showMenu: false
+    };
+  }
+};
+</script>

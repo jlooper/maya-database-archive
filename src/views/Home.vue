@@ -75,7 +75,9 @@
 export default {
   name: "app",
   data() {
-    return {};
+    return {
+      //showMenu: false
+    };
   },
   methods: {}
 };

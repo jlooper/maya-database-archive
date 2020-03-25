@@ -1,5 +1,5 @@
 <template web>
-  <main class="column is-four-fifths main">
+  <main class="column is-four-fifths main is-pulled-right">
     <div class="box main-content">
       <h1 class="title is-size-3">Welcome, {{ $auth.user.name }}</h1>
       <div>
@@ -13,6 +13,12 @@
 //import { mapState } from 'vuex';
 export default {
   name: "profile",
+  data() {
+    return {
+      //showMenu: true
+    };
+  },
+
   computed: {
     //...mapState(['user']),
   },

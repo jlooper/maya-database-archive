@@ -28,7 +28,4 @@ footer {
   z-index: 30;
   padding: 10px;
 }
-main {
-  margin-top: 20px;
-}
 </style>

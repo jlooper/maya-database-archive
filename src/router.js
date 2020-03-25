@@ -5,7 +5,7 @@ import Profile from '@/views/Profile.vue';
 import About from '@/views/About.vue';
 import Home from '@/views/Home.vue';
 import Search from '@/views/Search.vue';
-import Error from '@/views/404.vue';
+import Lost from '@/views/Lost.vue';
 
 import { authGuard } from '@/auth';
 
@@ -41,7 +41,7 @@ const router = new Router({
 		{
 			path: '/error',
 			name: 'error',
-			component: 404,
+			component: Lost,
 		},
 	],
 });

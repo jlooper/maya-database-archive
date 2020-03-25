@@ -1,21 +1,23 @@
 <template>
-  <aside v-if="this.user != null" class="column is-2 aside">
-    <nav class="menu">
-      <ul class="menu-list">
-        <li>
-          <router-link class="navbar-item" :to="'/profile'">
-            <i class="fas fa-user"></i>My Profile
-          </router-link>
-        </li>
+  <div class>
+    <aside v-show="showMenu" class="column is-one-fifth aside is-pulled-left">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li>
+            <router-link class="navbar-item" :to="'/profile'">
+              <i class="fas fa-user"></i> My Profile
+            </router-link>
+          </li>
 
-        <li>
-          <router-link class="navbar-item" :to="'/search'">
-            <i class="fas fa-search"></i>Search
-          </router-link>
-        </li>
-      </ul>
-    </nav>
-  </aside>
+          <li>
+            <router-link class="navbar-item" :to="'/search'">
+              <i class="fas fa-search"></i> Search
+            </router-link>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
 </template>
 
 <script>
@@ -23,6 +25,9 @@
 export default {
   computed: {
     //...mapState(["user"])
+    showMenu() {
+      return this.$router.app._route.name !== "home";
+    }
   },
   data: () => ({
     //currentUser: firebase.auth().currentUser,
