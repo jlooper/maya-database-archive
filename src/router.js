@@ -6,8 +6,7 @@ import About from '@/views/About.vue';
 import Home from '@/views/Home.vue';
 import Search from '@/views/Search.vue';
 import Lost from '@/views/Lost.vue';
-
-import { authGuard } from '@/auth';
+import Login from '@/views/Login.vue';
 
 Vue.use(Router);
 
@@ -19,6 +18,11 @@ const router = new Router({
 			path: '/',
 			name: 'home',
 			component: Home,
+		},
+		{
+			path: '/login',
+			name: 'login',
+			component: Login,
 		},
 
 		{
@@ -36,7 +40,7 @@ const router = new Router({
 			path: '/profile',
 			name: 'profile',
 			component: Profile,
-			beforeEnter: authGuard,
+			//beforeEnter: authGuard,
 		},
 		{
 			path: '/error',

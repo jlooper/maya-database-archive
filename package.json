@@ -16,6 +16,8 @@
 		"bulma": "^0.7.5",
 		"core-js": "^2.6.5",
 		"moment-timezone": "^0.5.27",
+		"playfab-sdk": "^2.43.200303",
+		"playfab-web-sdk": "^1.61.200303",
 		"vue": "^2.6.10",
 		"vue-moment": "^4.1.0",
 		"vue-router": "^3.0.3",

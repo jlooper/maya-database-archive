@@ -7,7 +7,11 @@ Vue.config.productionTip = false;
 import Vuelidate from 'vuelidate';
 Vue.use(Vuelidate);
 
-import { Auth0Plugin } from './auth';
+import Playfab from 'playfab-web-sdk/src/PlayFab/PlayFabClientApi.js';
+
+//Vue.use(Playfab);
+
+/*import { Auth0Plugin } from './auth';
 import { domain, clientId } from './auth/auth_config.json';
 Vue.use(Auth0Plugin, {
 	domain,
@@ -17,7 +21,7 @@ Vue.use(Auth0Plugin, {
 	},
 });
 
-/*import VueMoment from 'vue-moment';
+import VueMoment from 'vue-moment';
 import moment from 'moment-timezone';
 
 Vue.use(VueMoment, {
