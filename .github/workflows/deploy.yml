@@ -1,7 +1,8 @@
 on:
   push:
-    branches:
-      - master
+    #branches:
+    branches-ignore:
+      - '**'
 
 env:
   AZURE_WEBAPP_NAME: "maya-database-archive" # set this to your application's name
