@@ -17,14 +17,7 @@ namespace MayanGlyphsApi
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-         Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((ctx, config) =>
-                {
-                    if (!ctx.HostingEnvironment.IsDevelopment())
-                    {
-                        config.AddEnvironmentVariables(prefix: "MAYAN_");
-                    }
-                })
+         Host.CreateDefaultBuilder(args)               
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
