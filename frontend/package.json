@@ -12,13 +12,12 @@
 		"start": "npm run css-watch"
 	},
 	"dependencies": {
-		"@auth0/auth0-spa-js": "^1.6.5",
+		"axios": "^0.19.2",
 		"bulma": "^0.7.5",
 		"core-js": "^2.6.5",
 		"moment-timezone": "^0.5.27",
-		"playfab-sdk": "^2.43.200303",
-		"playfab-web-sdk": "^1.61.200303",
 		"vue": "^2.6.10",
+		"vue-api-query": "^1.5.1",
 		"vue-moment": "^4.1.0",
 		"vue-router": "^3.0.3",
 		"vuelidate": "^0.7.4",
