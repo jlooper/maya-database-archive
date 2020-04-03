@@ -2,10 +2,9 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import axios from 'axios';
-import { Model } from 'vue-api-query';
-Model.$http = axios;
+import buefy from 'buefy';
 
+Vue.use(buefy);
 Vue.config.productionTip = false;
 import Vuelidate from 'vuelidate';
 Vue.use(Vuelidate);
