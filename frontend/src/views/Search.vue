@@ -37,6 +37,7 @@
 			</form>
 		</div>
 		<p>{{ message }}</p>
+
 		<section v-if="artifacts.length > 0" style="overflow-x: scroll;">
 			<b-field grouped group-multiline>
 				<b-select v-model="defaultSortDirection">
@@ -57,7 +58,6 @@
 					<b-switch v-model="isPaginationSimple" :disabled="!isPaginated">Simple pagination</b-switch>
 				</div>
 			</b-field>
-
 			<b-table
 				:data="artifacts"
 				:paginated="isPaginated"
@@ -136,6 +136,7 @@
 				</template>
 			</b-table>
 		</section>
+		<b-loading :is-full-page="false" :active.sync="isLoading" :can-cancel="true"></b-loading>
 	</main>
 </template>
 
@@ -152,6 +153,7 @@ export default {
 	data: function() {
 		return {
 			submitStatus: null,
+			isLoading: false,
 			artifacts: [],
 			message: '',
 			validClass: 'input',
@@ -170,6 +172,7 @@ export default {
 
 	methods: {
 		submit() {
+			this.isLoading = true;
 			this.message = '';
 			this.$v.$touch();
 			if (this.search_field_1 == null) {
@@ -186,6 +189,7 @@ export default {
 						`https://mayan-glyphs.azurewebsites.net/odata/Artifacts?$filter=${option1}%20eq%20%27${option2}%27&$top=30`
 					)
 					.then(response => {
+						this.isLoading = false;
 						if (response.data.value.length > 0) {
 							this.artifacts = response.data.value;
 						} else {
