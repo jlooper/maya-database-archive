@@ -36,6 +36,7 @@
 				</div>
 			</form>
 		</div>
+		<p>{{ message }}</p>
 		<section v-if="artifacts.length > 0" style="overflow-x: scroll;">
 			<b-field grouped group-multiline>
 				<b-select v-model="defaultSortDirection">
@@ -175,6 +176,7 @@ export default {
 
 	methods: {
 		submit() {
+			this.message = '';
 			this.$v.$touch();
 			if (this.search_field_1 == null) {
 				this.submitStatus = 'ERROR';
@@ -190,7 +192,11 @@ export default {
 						`https://mayan-glyphs.azurewebsites.net/odata/Artifacts?$filter=${option1}%20eq%20%27${option2}%27&$top=30`
 					)
 					.then(response => {
-						this.artifacts = response.data.value;
+						if (response.data.value.length > 0) {
+							this.artifacts = response.data.value;
+						} else {
+							this.message = 'Sorry, no records found.';
+						}
 					});
 				setTimeout(() => {
 					this.submitStatus = 'OK';
