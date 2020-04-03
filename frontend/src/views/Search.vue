@@ -87,56 +87,50 @@
 						{{ props.row.Material }}
 					</b-table-column>
 
-					<b-table-column field="Technique" label="Technique" sortable centered>
+					<b-table-column field="Technique" label="Technique" sortable>
 						{{ props.row.Technique }}
 					</b-table-column>
 
-					<b-table-column field="RegionOrigin" label="Region Origin" width="40" sortable numeric>
+					<b-table-column field="RegionOrigin" label="Region Origin" width="40" sortable>
 						{{ props.row.RegionOrigin }}
 					</b-table-column>
-					<b-table-column field="RegionDestination" label="Region Destination" width="40" sortable numeric>
+					<b-table-column field="RegionDestination" label="Region Destination" width="40" sortable>
 						{{ props.row.RegionDestination }}
 					</b-table-column>
-					<b-table-column field="BlockSort" label="Block Sort" width="40" sortable numeric>
+					<b-table-column field="BlockSort" label="Block Sort" width="40" sortable>
 						{{ props.row.BlockSort }}
 					</b-table-column>
-					<b-table-column field="Jabbr1" label="Jabbr1" width="40" sortable numeric>
+					<b-table-column field="Jabbr1" label="Jabbr1" width="40" sortable>
 						{{ props.row.Jabbr1 }}
 					</b-table-column>
-					<b-table-column field="SiteOrigin" label="Site Origin" width="40" sortable numeric>
+					<b-table-column field="SiteOrigin" label="Site Origin" width="40" sortable>
 						{{ props.row.SiteOrigin }}
 					</b-table-column>
-					<b-table-column
-						field="SiteCodeDestination"
-						label="Site Code Destination"
-						width="40"
-						sortable
-						numeric
-					>
+					<b-table-column field="SiteCodeDestination" label="Site Code Destination" width="40" sortable>
 						{{ props.row.SiteCodeDestination }}
 					</b-table-column>
-					<b-table-column field="MayanArtist" label="Mayan Artist" width="40" sortable numeric>
+					<b-table-column field="MayanArtist" label="Mayan Artist" width="40" sortable>
 						{{ props.row.MayanArtist }}
 					</b-table-column>
-					<b-table-column field="Cal" label="Cal" width="40" sortable numeric>
+					<b-table-column field="Cal" label="Cal" width="40" sortable>
 						{{ props.row.Cal }}
 					</b-table-column>
-					<b-table-column field="LC" label="LC" width="40" sortable numeric>
+					<b-table-column field="LC" label="LC" width="40" sortable>
 						{{ props.row.LC }}
 					</b-table-column>
-					<b-table-column field="Cycle260" label="Cycle260" width="40" sortable numeric>
+					<b-table-column field="Cycle260" label="Cycle260" width="40" sortable>
 						{{ props.row.Cycle260 }}
 					</b-table-column>
-					<b-table-column field="Cycle365" label="Cycle365" width="40" sortable numeric>
+					<b-table-column field="Cycle365" label="Cycle365" width="40" sortable>
 						{{ props.row.Cycle365 }}
 					</b-table-column>
-					<b-table-column field="HellmuthNum" label="HellmuthNum" width="40" sortable numeric>
+					<b-table-column field="HellmuthNum" label="HellmuthNum" width="40" sortable>
 						{{ props.row.HellmuthNum }}
 					</b-table-column>
-					<b-table-column field="MSNum" label="MSNum" width="40" sortable numeric>
+					<b-table-column field="MSNum" label="MSNum" width="40" sortable>
 						{{ props.row.MSNum }}
 					</b-table-column>
-					<b-table-column field="Surface" label="Surface" width="40" sortable numeric>
+					<b-table-column field="Surface" label="Surface" width="40" sortable>
 						{{ props.row.Surface }}
 					</b-table-column>
 				</template>
