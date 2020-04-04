@@ -11,6 +11,7 @@
 								<option value="class">Class</option>
 								<option value="technique">Technique</option>
 								<option value="material">Material</option>
+								<option value="surface">Surface</option>
 							</select>
 						</div>
 					</div>
@@ -19,23 +20,43 @@
 							<select :class="validClass" name="search_option_2" v-model.trim="$v.search_option_2.$model">
 								<option value="eq">=</option>
 								<option value="like">Like</option>
+								<option value="contains">contains</option>
 							</select>
 						</div>
 					</div>
 					<p class="control is-expanded">
-						<input
-							:class="validClass"
-							v-model.trim="$v.search_field_1.$model"
-							type="text"
-							placeholder="Search the database"
-						/>
+						<input :class="validClass" v-model.trim="$v.search_field_1.$model" type="text" />
 					</p>
-					<div class="field">
-						<div class="control">
-							<button type="submit" :disabled="submitStatus === 'PENDING'" class="button is-link">
-								Search
-							</button>
+				</div>
+				<div class="field is-grouped">
+					<div class="control">
+						<div class="select">
+							<select :class="validClass" name="search_option_3" v-model.trim="$v.search_option_3.$model">
+								<option value="class">Class</option>
+								<option value="technique">Technique</option>
+								<option value="material">Material</option>
+								<option value="surface">Surface</option>
+							</select>
 						</div>
+					</div>
+					<div class="control">
+						<div class="select">
+							<select :class="validClass" name="search_option_4" v-model.trim="$v.search_option_4.$model">
+								<option value="eq">=</option>
+								<option value="like">Like</option>
+								<option value="contains">contains</option>
+							</select>
+						</div>
+					</div>
+					<p class="control is-expanded">
+						<input :class="validClass" v-model.trim="$v.search_field_2.$model" type="text" />
+					</p>
+				</div>
+				<div class="field">
+					<div class="control">
+						<button type="submit" :disabled="submitStatus === 'PENDING'" class="button is-link">
+							Search
+						</button>
 					</div>
 				</div>
 				<div v-if="submitStatus == 'ERROR'">
@@ -279,6 +300,15 @@ export default {
 		search_option_2: {
 			required,
 		},
+		search_field_2: {
+			required,
+		},
+		search_option_3: {
+			required,
+		},
+		search_option_4: {
+			required,
+		},
 	},
 
 	data: function() {
@@ -289,8 +319,11 @@ export default {
 			message: '',
 			validClass: 'input',
 			search_field_1: null,
-			search_option_1: 'Select',
-			search_option_2: 'eq',
+			search_option_1: null,
+			search_option_2: null,
+			search_field_2: null,
+			search_option_3: null,
+			search_option_4: null,
 			isPaginated: true,
 			isPaginationSimple: false,
 			paginationPosition: 'bottom',
@@ -338,9 +371,13 @@ export default {
 				let option1 = this.search_option_1;
 				let option2 = this.search_option_2;
 				let field1 = this.search_field_1;
+				let option3 = this.search_option_3;
+				let option4 = this.search_option_4;
+				let field2 = this.search_field_2;
+				//$filter=material%20eq%20%27stone%27&surface%20eq%20west$top=30
 				axios
 					.get(
-						`https://mayan-glyphs.azurewebsites.net/odata/Artifacts?$filter=${option1}%20${option2}%20%27${field1}%27&$top=30`
+						`https://mayan-glyphs.azurewebsites.net/odata/Artifacts?$filter=${option1}%20${option2}%20%27${field1}%27&${option3}%20${option4}%20${field2}$top=30`
 					)
 					.then(response => {
 						this.isLoading = false;
