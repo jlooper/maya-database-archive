@@ -7,11 +7,18 @@
 				<div class="field is-grouped">
 					<div class="control">
 						<div class="select">
-							<select name="search_option_1" v-model.trim="search_option_1">
-								<option selected>Select field</option>
-								<option value="class">class</option>
-								<option value="technique">technique</option>
-								<option value="material">material</option>
+							<select :class="validClass" name="search_option_1" v-model.trim="$v.search_option_1.$model">
+								<option value="class">Class</option>
+								<option value="technique">Technique</option>
+								<option value="material">Material</option>
+							</select>
+						</div>
+					</div>
+					<div class="control">
+						<div class="select">
+							<select :class="validClass" name="search_option_2" v-model.trim="$v.search_option_2.$model">
+								<option value="eq">=</option>
+								<option value="like">Like</option>
 							</select>
 						</div>
 					</div>
@@ -40,11 +47,11 @@
 
 		<section v-if="artifacts.length > 0" style="overflow-x: scroll;">
 			<b-field grouped group-multiline>
-				<b-select v-model="defaultSortDirection">
+				<b-select size="is-small" v-model="defaultSortDirection">
 					<option value="asc">Default sort direction: ASC</option>
 					<option value="desc">Default sort direction: DESC</option>
 				</b-select>
-				<b-select v-model="perPage" :disabled="!isPaginated">
+				<b-select size="is-small" v-model="perPage" :disabled="!isPaginated">
 					<option value="5">5 per page</option>
 					<option value="10">10 per page</option>
 					<option value="15">15 per page</option>
@@ -52,12 +59,23 @@
 				</b-select>
 
 				<div class="control is-flex">
-					<b-switch v-model="isPaginated">Paginated</b-switch>
+					<b-switch size="is-small" type="is-warning" v-model="isPaginated">Paginated</b-switch>
 				</div>
 				<div class="control is-flex">
-					<b-switch v-model="isPaginationSimple" :disabled="!isPaginated">Simple pagination</b-switch>
+					<b-switch size="is-small" type="is-warning" v-model="isPaginationSimple" :disabled="!isPaginated"
+						>Simple pagination</b-switch
+					>
 				</div>
 			</b-field>
+
+			<b-field grouped group-multiline>
+				<div v-for="(column, index) in columnsVisible" :key="index" class="control">
+					<b-checkbox size="is-small" type="is-light" v-model="column.display">
+						{{ column.title }}
+					</b-checkbox>
+				</div>
+			</b-field>
+
 			<b-table
 				:data="artifacts"
 				:paginated="isPaginated"
@@ -68,6 +86,7 @@
 				:default-sort-direction="defaultSortDirection"
 				:sort-icon="sortIcon"
 				:sort-icon-size="sortIconSize"
+				:striped="true"
 				default-sort="RecId"
 				aria-next-label="Next page"
 				aria-previous-label="Previous page"
@@ -75,62 +94,168 @@
 				aria-current-label="Current page"
 			>
 				<template slot-scope="props">
-					<b-table-column field="RecId" label="ID" width="40" sortable numeric>
+					<b-table-column
+						field="RecId"
+						:label="columnsVisible['RecId'].title"
+						:visible="columnsVisible['RecId'].display"
+						width="40"
+						sortable
+						numeric
+					>
 						{{ props.row.RecId }}
 					</b-table-column>
 
-					<b-table-column field="Class" label="Class" sortable>
+					<b-table-column
+						field="Class"
+						:label="columnsVisible['Class'].title"
+						:visible="columnsVisible['Class'].display"
+						sortable
+					>
 						{{ props.row.Class }}
 					</b-table-column>
 
-					<b-table-column field="Material" label="Material" sortable>
+					<b-table-column
+						field="Material"
+						:label="columnsVisible['Material'].title"
+						:visible="columnsVisible['Material'].display"
+						sortable
+					>
 						{{ props.row.Material }}
 					</b-table-column>
 
-					<b-table-column field="Technique" label="Technique" sortable>
+					<b-table-column
+						field="Technique"
+						:label="columnsVisible['Technique'].title"
+						:visible="columnsVisible['Technique'].display"
+						sortable
+					>
 						{{ props.row.Technique }}
 					</b-table-column>
 
-					<b-table-column field="RegionOrigin" label="Region Origin" width="40" sortable>
+					<b-table-column
+						field="RegionOrigin"
+						:label="columnsVisible['RegionOrigin'].title"
+						:visible="columnsVisible['RegionOrigin'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.RegionOrigin }}
 					</b-table-column>
-					<b-table-column field="RegionDestination" label="Region Destination" width="40" sortable>
+					<b-table-column
+						field="RegionDestination"
+						:label="columnsVisible['RegionDestination'].title"
+						:visible="columnsVisible['RegionDestination'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.RegionDestination }}
 					</b-table-column>
-					<b-table-column field="BlockSort" label="Block Sort" width="40" sortable>
+					<b-table-column
+						field="BlockSort"
+						:label="columnsVisible['BlockSort'].title"
+						:visible="columnsVisible['BlockSort'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.BlockSort }}
 					</b-table-column>
-					<b-table-column field="Jabbr1" label="Jabbr1" width="40" sortable>
+					<b-table-column
+						field="Jabbr1"
+						:label="columnsVisible['Jabbr1'].title"
+						:visible="columnsVisible['Jabbr1'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.Jabbr1 }}
 					</b-table-column>
-					<b-table-column field="SiteOrigin" label="Site Origin" width="40" sortable>
+					<b-table-column
+						field="SiteOrigin"
+						:label="columnsVisible['SiteOrigin'].title"
+						:visible="columnsVisible['SiteOrigin'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.SiteOrigin }}
 					</b-table-column>
-					<b-table-column field="SiteCodeDestination" label="Site Code Destination" width="40" sortable>
+					<b-table-column
+						field="SiteCodeDestination"
+						:label="columnsVisible['SiteCodeDestination'].title"
+						:visible="columnsVisible['SiteCodeDestination'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.SiteCodeDestination }}
 					</b-table-column>
-					<b-table-column field="MayanArtist" label="Mayan Artist" width="40" sortable>
+					<b-table-column
+						field="MayanArtist"
+						:label="columnsVisible['MayanArtist'].title"
+						:visible="columnsVisible['MayanArtist'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.MayanArtist }}
 					</b-table-column>
-					<b-table-column field="Cal" label="Cal" width="40" sortable>
+					<b-table-column
+						field="Cal"
+						:label="columnsVisible['Cal'].title"
+						:visible="columnsVisible['Cal'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.Cal }}
 					</b-table-column>
-					<b-table-column field="LC" label="LC" width="40" sortable>
+					<b-table-column
+						field="LC"
+						:label="columnsVisible['LC'].title"
+						:visible="columnsVisible['LC'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.LC }}
 					</b-table-column>
-					<b-table-column field="Cycle260" label="Cycle260" width="40" sortable>
+					<b-table-column
+						field="Cycle260"
+						:label="columnsVisible['Cycle260'].title"
+						:visible="columnsVisible['Cycle260'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.Cycle260 }}
 					</b-table-column>
-					<b-table-column field="Cycle365" label="Cycle365" width="40" sortable>
+					<b-table-column
+						field="Cycle365"
+						:label="columnsVisible['Cycle365'].title"
+						:visible="columnsVisible['Cycle365'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.Cycle365 }}
 					</b-table-column>
-					<b-table-column field="HellmuthNum" label="HellmuthNum" width="40" sortable>
+					<b-table-column
+						field="HellmuthNum"
+						:label="columnsVisible['HellmuthNum'].title"
+						:visible="columnsVisible['HellmuthNum'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.HellmuthNum }}
 					</b-table-column>
-					<b-table-column field="MSNum" label="MSNum" width="40" sortable>
+					<b-table-column
+						field="MSNum"
+						:label="columnsVisible['MSNum'].title"
+						:visible="columnsVisible['MSNum'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.MSNum }}
 					</b-table-column>
-					<b-table-column field="Surface" label="Surface" width="40" sortable>
+					<b-table-column
+						field="Surface"
+						:label="columnsVisible['Surface'].title"
+						:visible="columnsVisible['Surface'].display"
+						width="40"
+						sortable
+					>
 						{{ props.row.Surface }}
 					</b-table-column>
 				</template>
@@ -148,6 +273,12 @@ export default {
 		search_field_1: {
 			required,
 		},
+		search_option_1: {
+			required,
+		},
+		search_option_2: {
+			required,
+		},
 	},
 
 	data: function() {
@@ -158,7 +289,8 @@ export default {
 			message: '',
 			validClass: 'input',
 			search_field_1: null,
-			search_option_1: null,
+			search_option_1: 'Select',
+			search_option_2: 'eq',
 			isPaginated: true,
 			isPaginationSimple: false,
 			paginationPosition: 'bottom',
@@ -167,6 +299,26 @@ export default {
 			sortIconSize: 'is-small',
 			currentPage: 1,
 			perPage: 5,
+			columnsVisible: {
+				RecId: { title: 'Id', display: true },
+				Class: { title: 'Class', display: true },
+				Material: { title: 'Material', display: true },
+				Technique: { title: 'Technique', display: true },
+				RegionOrigin: { title: 'Region Origin', display: true },
+				RegionDestination: { title: 'Region Destination', display: true },
+				BlockSort: { title: 'Block Sort', display: true },
+				Jabbr1: { title: 'Jabbr1', display: true },
+				SiteOrigin: { title: 'Site Origin', display: true },
+				SiteCodeDestination: { title: 'Site Code Destination', display: true },
+				MayanArtist: { title: 'Mayan Artist', display: true },
+				Cal: { title: 'Cal', display: true },
+				LC: { title: 'LC', display: true },
+				Cycle260: { title: 'Cycle260', display: true },
+				Cycle365: { title: 'Cycle365', display: true },
+				HellmuthNum: { title: 'HellmuthNum', display: true },
+				MSNum: { title: 'MSNum', display: true },
+				Surface: { title: 'Surface', display: true },
+			},
 		};
 	},
 
@@ -174,6 +326,7 @@ export default {
 		submit() {
 			this.isLoading = true;
 			this.message = '';
+			this.artifacts = [];
 			this.$v.$touch();
 			if (this.search_field_1 == null) {
 				this.submitStatus = 'ERROR';
@@ -183,10 +336,11 @@ export default {
 				this.validClass = 'input';
 				//start search
 				let option1 = this.search_option_1;
-				let option2 = this.search_field_1;
+				let option2 = this.search_option_2;
+				let field1 = this.search_field_1;
 				axios
 					.get(
-						`https://mayan-glyphs.azurewebsites.net/odata/Artifacts?$filter=${option1}%20eq%20%27${option2}%27&$top=30`
+						`https://mayan-glyphs.azurewebsites.net/odata/Artifacts?$filter=${option1}%20${option2}%20%27${field1}%27&$top=30`
 					)
 					.then(response => {
 						this.isLoading = false;
