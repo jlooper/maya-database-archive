@@ -7,6 +7,7 @@ import Home from '@/views/Home.vue';
 import Search from '@/views/Search.vue';
 import Lost from '@/views/Lost.vue';
 import Login from '@/views/Login.vue';
+import Register from '@/views/Register.vue';
 
 Vue.use(Router);
 
@@ -23,6 +24,11 @@ const router = new Router({
 			path: '/login',
 			name: 'login',
 			component: Login,
+		},
+		{
+			path: '/register',
+			name: 'register',
+			component: Register,
 		},
 
 		{

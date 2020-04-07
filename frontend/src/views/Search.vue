@@ -31,7 +31,8 @@
 				<div class="field is-grouped">
 					<div class="control">
 						<div class="select">
-							<select :class="validClass" name="search_option_3" v-model.trim="$v.search_option_3.$model">
+							<select class="input" name="search_option_3" v-model="search_option_3">
+								<option value>Select</option>
 								<option value="class">Class</option>
 								<option value="technique">Technique</option>
 								<option value="material">Material</option>
@@ -41,7 +42,8 @@
 					</div>
 					<div class="control">
 						<div class="select">
-							<select :class="validClass" name="search_option_4" v-model.trim="$v.search_option_4.$model">
+							<select class="input" name="search_option_4" v-model="search_option_4">
+								<option value></option>
 								<option value="eq">=</option>
 								<option value="like">Like</option>
 								<option value="contains">contains</option>
@@ -49,7 +51,7 @@
 						</div>
 					</div>
 					<p class="control is-expanded">
-						<input :class="validClass" v-model.trim="$v.search_field_2.$model" type="text" />
+						<input class="input" v-model="search_field_2" type="text" />
 					</p>
 				</div>
 				<div class="field">
@@ -64,7 +66,7 @@
 				</div>
 			</form>
 		</div>
-		<p>{{ message }}</p>
+		<p v-if="artifacts.length == 0">{{ message }}</p>
 
 		<section v-if="artifacts.length > 0" style="overflow-x: scroll;">
 			<b-field grouped group-multiline>
@@ -91,9 +93,7 @@
 
 			<b-field grouped group-multiline>
 				<div v-for="(column, index) in columnsVisible" :key="index" class="control">
-					<b-checkbox size="is-small" type="is-light" v-model="column.display">
-						{{ column.title }}
-					</b-checkbox>
+					<b-checkbox size="is-small" type="is-light" v-model="column.display">{{ column.title }}</b-checkbox>
 				</div>
 			</b-field>
 
@@ -122,36 +122,32 @@
 						width="40"
 						sortable
 						numeric
+						>{{ props.row.RecId }}</b-table-column
 					>
-						{{ props.row.RecId }}
-					</b-table-column>
 
 					<b-table-column
 						field="Class"
 						:label="columnsVisible['Class'].title"
 						:visible="columnsVisible['Class'].display"
 						sortable
+						>{{ props.row.Class }}</b-table-column
 					>
-						{{ props.row.Class }}
-					</b-table-column>
 
 					<b-table-column
 						field="Material"
 						:label="columnsVisible['Material'].title"
 						:visible="columnsVisible['Material'].display"
 						sortable
+						>{{ props.row.Material }}</b-table-column
 					>
-						{{ props.row.Material }}
-					</b-table-column>
 
 					<b-table-column
 						field="Technique"
 						:label="columnsVisible['Technique'].title"
 						:visible="columnsVisible['Technique'].display"
 						sortable
+						>{{ props.row.Technique }}</b-table-column
 					>
-						{{ props.row.Technique }}
-					</b-table-column>
 
 					<b-table-column
 						field="RegionOrigin"
@@ -159,126 +155,112 @@
 						:visible="columnsVisible['RegionOrigin'].display"
 						width="40"
 						sortable
+						>{{ props.row.RegionOrigin }}</b-table-column
 					>
-						{{ props.row.RegionOrigin }}
-					</b-table-column>
 					<b-table-column
 						field="RegionDestination"
 						:label="columnsVisible['RegionDestination'].title"
 						:visible="columnsVisible['RegionDestination'].display"
 						width="40"
 						sortable
+						>{{ props.row.RegionDestination }}</b-table-column
 					>
-						{{ props.row.RegionDestination }}
-					</b-table-column>
 					<b-table-column
 						field="BlockSort"
 						:label="columnsVisible['BlockSort'].title"
 						:visible="columnsVisible['BlockSort'].display"
 						width="40"
 						sortable
+						>{{ props.row.BlockSort }}</b-table-column
 					>
-						{{ props.row.BlockSort }}
-					</b-table-column>
 					<b-table-column
 						field="Jabbr1"
 						:label="columnsVisible['Jabbr1'].title"
 						:visible="columnsVisible['Jabbr1'].display"
 						width="40"
 						sortable
+						>{{ props.row.Jabbr1 }}</b-table-column
 					>
-						{{ props.row.Jabbr1 }}
-					</b-table-column>
 					<b-table-column
 						field="SiteOrigin"
 						:label="columnsVisible['SiteOrigin'].title"
 						:visible="columnsVisible['SiteOrigin'].display"
 						width="40"
 						sortable
+						>{{ props.row.SiteOrigin }}</b-table-column
 					>
-						{{ props.row.SiteOrigin }}
-					</b-table-column>
 					<b-table-column
 						field="SiteCodeDestination"
 						:label="columnsVisible['SiteCodeDestination'].title"
 						:visible="columnsVisible['SiteCodeDestination'].display"
 						width="40"
 						sortable
+						>{{ props.row.SiteCodeDestination }}</b-table-column
 					>
-						{{ props.row.SiteCodeDestination }}
-					</b-table-column>
 					<b-table-column
 						field="MayanArtist"
 						:label="columnsVisible['MayanArtist'].title"
 						:visible="columnsVisible['MayanArtist'].display"
 						width="40"
 						sortable
+						>{{ props.row.MayanArtist }}</b-table-column
 					>
-						{{ props.row.MayanArtist }}
-					</b-table-column>
 					<b-table-column
 						field="Cal"
 						:label="columnsVisible['Cal'].title"
 						:visible="columnsVisible['Cal'].display"
 						width="40"
 						sortable
+						>{{ props.row.Cal }}</b-table-column
 					>
-						{{ props.row.Cal }}
-					</b-table-column>
 					<b-table-column
 						field="LC"
 						:label="columnsVisible['LC'].title"
 						:visible="columnsVisible['LC'].display"
 						width="40"
 						sortable
+						>{{ props.row.LC }}</b-table-column
 					>
-						{{ props.row.LC }}
-					</b-table-column>
 					<b-table-column
 						field="Cycle260"
 						:label="columnsVisible['Cycle260'].title"
 						:visible="columnsVisible['Cycle260'].display"
 						width="40"
 						sortable
+						>{{ props.row.Cycle260 }}</b-table-column
 					>
-						{{ props.row.Cycle260 }}
-					</b-table-column>
 					<b-table-column
 						field="Cycle365"
 						:label="columnsVisible['Cycle365'].title"
 						:visible="columnsVisible['Cycle365'].display"
 						width="40"
 						sortable
+						>{{ props.row.Cycle365 }}</b-table-column
 					>
-						{{ props.row.Cycle365 }}
-					</b-table-column>
 					<b-table-column
 						field="HellmuthNum"
 						:label="columnsVisible['HellmuthNum'].title"
 						:visible="columnsVisible['HellmuthNum'].display"
 						width="40"
 						sortable
+						>{{ props.row.HellmuthNum }}</b-table-column
 					>
-						{{ props.row.HellmuthNum }}
-					</b-table-column>
 					<b-table-column
 						field="MSNum"
 						:label="columnsVisible['MSNum'].title"
 						:visible="columnsVisible['MSNum'].display"
 						width="40"
 						sortable
+						>{{ props.row.MSNum }}</b-table-column
 					>
-						{{ props.row.MSNum }}
-					</b-table-column>
 					<b-table-column
 						field="Surface"
 						:label="columnsVisible['Surface'].title"
 						:visible="columnsVisible['Surface'].display"
 						width="40"
 						sortable
+						>{{ props.row.Surface }}</b-table-column
 					>
-						{{ props.row.Surface }}
-					</b-table-column>
 				</template>
 			</b-table>
 		</section>
@@ -288,7 +270,8 @@
 
 <script>
 import { required } from 'vuelidate/lib/validators';
-import axios from 'axios';
+import { o } from 'odata';
+
 export default {
 	validations: {
 		search_field_1: {
@@ -300,18 +283,9 @@ export default {
 		search_option_2: {
 			required,
 		},
-		search_field_2: {
-			required,
-		},
-		search_option_3: {
-			required,
-		},
-		search_option_4: {
-			required,
-		},
 	},
 
-	data: function() {
+	data: function () {
 		return {
 			submitStatus: null,
 			isLoading: false,
@@ -362,6 +336,7 @@ export default {
 			this.artifacts = [];
 			this.$v.$touch();
 			if (this.search_field_1 == null) {
+				this.isLoading = false;
 				this.submitStatus = 'ERROR';
 				this.validClass = 'input is-danger';
 			} else {
@@ -374,19 +349,19 @@ export default {
 				let option3 = this.search_option_3;
 				let option4 = this.search_option_4;
 				let field2 = this.search_field_2;
+
 				//$filter=material%20eq%20%27stone%27&surface%20eq%20west$top=30
-				axios
-					.get(
-						`https://mayan-glyphs.azurewebsites.net/odata/Artifacts?$filter=${option1}%20${option2}%20%27${field1}%27&${option3}%20${option4}%20${field2}$top=30`
-					)
-					.then(response => {
-						this.isLoading = false;
-						if (response.data.value.length > 0) {
-							this.artifacts = response.data.value;
-						} else {
-							this.message = 'Sorry, no records found.';
-						}
+				//.query({$filter: `UserName eq 'foobar'`});
+				(async () => {
+					// handler
+					const oHandler = o('https://mayan-glyphs.azurewebsites.net/odata/');
+					this.artifacts = await oHandler.get('Artifacts').query({
+						//$filter: `` + option1 + ` eq '` + field1 + `'&` + option3 + `eq '` + field2 + ``,
+						$filter: `` + option1 + ` eq '` + field1 + `'`,
+						$top: 30,
 					});
+				})();
+				this.isLoading = false;
 				setTimeout(() => {
 					this.submitStatus = 'OK';
 					this.validClass = 'input';

@@ -17,6 +17,7 @@
 		"bulma": "^0.7.5",
 		"core-js": "^2.6.5",
 		"moment-timezone": "^0.5.27",
+		"odata": "^1.0.4",
 		"vue": "^2.6.10",
 		"vue-moment": "^4.1.0",
 		"vue-router": "^3.0.3",
