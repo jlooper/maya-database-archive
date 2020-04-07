@@ -9,6 +9,8 @@ import Lost from '@/views/Lost.vue';
 import Login from '@/views/Login.vue';
 import Register from '@/views/Register.vue';
 
+import store from './store.js';
+
 Vue.use(Router);
 
 const router = new Router({
@@ -46,7 +48,9 @@ const router = new Router({
 			path: '/profile',
 			name: 'profile',
 			component: Profile,
-			//beforeEnter: authGuard,
+			meta: {
+				requiresAuth: true,
+			},
 		},
 		{
 			path: '/error',
@@ -55,5 +59,15 @@ const router = new Router({
 		},
 	],
 });
-
+router.beforeEach((to, from, next) => {
+	if (to.matched.some((record) => record.meta.requiresAuth)) {
+		if (store.getters.isLoggedIn) {
+			next();
+			return;
+		}
+		next('/login');
+	} else {
+		next();
+	}
+});
 export default router;

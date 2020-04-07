@@ -17,6 +17,9 @@ export default new Vuex.Store({
 			state.userId = null;
 		},
 	},
+	getters: {
+		isLoggedIn: (state) => !!state.userId,
+	},
 	actions: {
 		setUserId({ commit }, userId) {
 			commit('setUserId', userId);
