@@ -36,7 +36,9 @@
             <input :class="validClass" v-model.trim="$v.search_field_1.$model" type="text" />
           </p>
         </div>
+
         <div class="field is-grouped">
+          <p class="and">and</p>
           <div class="control">
             <div class="select">
               <select class="input" name="search_option_3" v-model="search_option_3">
@@ -266,7 +268,7 @@
 
 <script>
 import { required } from "vuelidate/lib/validators";
-import { o } from "odata";
+import * as odata from "odata-client";
 
 export default {
   validations: {
@@ -345,17 +347,35 @@ export default {
         let option3 = this.search_option_3;
         let option4 = this.search_option_4;
         let field2 = this.search_field_2;
-
         //$filter=material%20eq%20%27stone%27&surface%20eq%20west$top=30
-        //.query({$filter: `UserName eq 'foobar'`});
+
         (async () => {
-          // handler
-          const oHandler = o("https://mayan-glyphs.azurewebsites.net/odata/");
-          this.artifacts = await oHandler.get("Artifacts").query({
-            //$filter: `` + option1 + ` eq '` + field1 + `'&` + option3 + `eq '` + field2 + ``,
-            $filter: `` + option1 + ` eq '` + field1 + `'`,
-            $top: 30
+          var q = odata({
+            format: "json",
+            service: "https://mayan-glyphs.azurewebsites.net/odata/",
+            resources: "Artifacts"
           });
+
+          if (option3 == null) {
+            this.artifacts = await q
+              .top(30)
+              .filter(option1, option2, field1)
+              .get()
+              .then(function(response) {
+                let data = JSON.parse(response.body);
+                return data.value;
+              });
+          } else {
+            this.artifacts = await q
+              .top(30)
+              .filter(option1, option2, field1)
+              .and(option3, option4, field2)
+              .get()
+              .then(function(response) {
+                let data = JSON.parse(response.body);
+                return data.value;
+              });
+          }
         })();
         this.isLoading = false;
         setTimeout(() => {
@@ -377,5 +397,9 @@ p {
 }
 .wrapper table {
   white-space: nowrap;
+}
+.and {
+  padding: 5px;
+  font-weight: bold;
 }
 </style>
