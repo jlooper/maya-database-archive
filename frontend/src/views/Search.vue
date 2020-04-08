@@ -2,21 +2,18 @@
   <main class="column is-four-fifths main is-pulled-right">
     <div id="search" class="box main-content">
       <h1 class="title">Search</h1>
+      <p class="has-text-danger">{{ message }}</p>
+
       <hr />
       <form @submit.prevent="submit">
         <div class="field is-grouped">
           <div class="control">
             <div class="select">
-              <select
-                :class="validClass"
-                name="search_option_1"
-                v-model.trim="$v.search_option_1.$model"
-              >
-                <option value="class">Class</option>
-                <option value="technique">Technique</option>
-                <option value="material">Material</option>
-                <option value="surface">Surface</option>
-              </select>
+              <div class="select">
+                <select :class="validClass" v-model.trim="$v.search_option_1.$model">
+                  <option v-for="c in cols" v-bind:key="c">{{ c }}</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="control">
@@ -41,12 +38,8 @@
           <p class="and">and</p>
           <div class="control">
             <div class="select">
-              <select class="input" name="search_option_3" v-model="search_option_3">
-                <option value>Select</option>
-                <option value="class">Class</option>
-                <option value="technique">Technique</option>
-                <option value="material">Material</option>
-                <option value="surface">Surface</option>
+              <select v-model="search_option_3">
+                <option v-for="c in cols" v-bind:key="c">{{ c }}</option>
               </select>
             </div>
           </div>
@@ -78,7 +71,6 @@
         </div>
       </form>
     </div>
-    <p v-if="artifacts.length == 0">{{ message }}</p>
 
     <section v-if="artifacts.length > 0" style="overflow-x: scroll;">
       <b-field grouped group-multiline>
@@ -282,6 +274,12 @@ export default {
       required
     }
   },
+  computed: {
+    cols() {
+      var keys = Object.keys(this.columnsVisible);
+      return keys;
+    }
+  },
 
   data: function() {
     return {
@@ -363,7 +361,9 @@ export default {
               .get()
               .then(function(response) {
                 let data = JSON.parse(response.body);
+                //if (data.value.length > 0) {
                 return data.value;
+                //}
               });
           } else {
             this.artifacts = await q
@@ -373,14 +373,20 @@ export default {
               .get()
               .then(function(response) {
                 let data = JSON.parse(response.body);
+                //if (data.value.length > 0) {
                 return data.value;
+                //}
               });
           }
         })();
+
         this.isLoading = false;
         setTimeout(() => {
           this.submitStatus = "OK";
           this.validClass = "input";
+          if (this.artifacts.length == 0) {
+            this.message = "Sorry, no records found";
+          }
         }, 500);
       }
     }
