@@ -384,9 +384,9 @@ export default {
         setTimeout(() => {
           this.submitStatus = "OK";
           this.validClass = "input";
-          if (this.artifacts.length == 0) {
+          /*if (this.artifacts.length == 0) {
             this.message = "Sorry, no records found";
-          }
+          }*/
         }, 500);
       }
     }
