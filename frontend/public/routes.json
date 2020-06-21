@@ -3,6 +3,24 @@
 		{
 			"route": "/*",
 			"serve": "/index.html"
+		},
+		{
+			"route": "/.auth/login/facebook",
+			"statusCode": "404"
+		},
+		{
+			"route": "/.auth/login/google",
+			"statusCode": "404"
+		},
+		{
+			"route": "/profile",
+			"allowedRoles": ["authenticated"]
+		}
+	],
+	"platformErrorOverrides": [
+		{
+			"errorType": "NotFound",
+			"serve": "/404.html"
 		}
 	]
 }

@@ -71,6 +71,7 @@ export default {
 			};
 
 			PlayFabClientSDK.LoginWithEmailAddress(loginRequest, this.LoginCallback);
+			
 		},
 
 		LoginCallback(result, error) {
