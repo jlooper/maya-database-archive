@@ -1,10 +1,6 @@
 {
 	"routes": [
 		{
-			"route": "/*",
-			"serve": "/index.html"
-		},
-		{
 			"route": "/.auth/login/facebook",
 			"statusCode": "404"
 		},
@@ -15,6 +11,11 @@
 		{
 			"route": "/profile",
 			"allowedRoles": ["authenticated"]
+		},
+		{
+			"route": "/*",
+			"serve": "/index.html",
+			"statusCode": 200
 		}
 	],
 	"platformErrorOverrides": [
