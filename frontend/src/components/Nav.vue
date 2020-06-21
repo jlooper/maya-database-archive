@@ -108,7 +108,6 @@ export default {
         const { clientPrincipal } = payload;
         return clientPrincipal;
       } catch (error) {
-        console.error("No profile could be found");
         return undefined;
       }
     }
