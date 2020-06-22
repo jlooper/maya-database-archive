@@ -91,7 +91,7 @@ export default {
 				type: Object,
 				default() {},
 			},
-			providers: ['twitter', 'github', 'google', 'facebook'],
+			providers: ['twitter', 'google', 'facebook'],
 		};
 	},
 	computed: {
