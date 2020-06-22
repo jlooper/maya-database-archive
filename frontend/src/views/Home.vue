@@ -13,21 +13,21 @@
 
             <div class="button-box">
               <b-button
-                class="social-button"
+                class="social-button twitter"
                 @click="Auth('twitter')"
                 size="is-medium"
                 icon-left="twitter"
               >Login with Twitter</b-button>
 
               <b-button
-                class="social-button"
+                class="social-button facebook"
                 @click="Auth('facebook')"
                 size="is-medium"
                 icon-left="facebook"
               >Login with Facebook</b-button>
 
               <b-button
-                class="social-button"
+                class="social-button google"
                 @click="Auth('google')"
                 size="is-medium"
                 icon-left="google"
@@ -113,6 +113,18 @@ export default {
 }
 .social-button {
   margin-right: 5px;
+}
+.twitter {
+  color: white;
+  background-color: #55acee;
+}
+.facebook {
+  color: white;
+  background-color: #3b5998;
+}
+.google {
+  color: white;
+  background-color: #34a853;
 }
 .card {
   border-radius: 5px;

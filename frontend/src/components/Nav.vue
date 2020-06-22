@@ -58,10 +58,12 @@
 
     <div class="has-background-link" height="5px">
       <div v-if="userInfo">
-        <p class="text-white">Welcome, {{ userInfo.userDetails }}! View your
-          <router-link class="navbar-item" :to="'profile'">profile</router-link>
+        <p class="welcome">
+          Welcome, {{ userInfo.userDetails }}! View your
+          <router-link :to="'profile'">profile</router-link>
         </p>
       </div>
+      <div v-else>&nbsp;</div>
     </div>
   </div>
 </template>
@@ -122,10 +124,14 @@ export default {
 .main-content {
   margin-top: 30px;
 }
-.circle {
-  width: 100px;
-  border-radius: 50px;
-  background-color: white;
+.welcome,
+.welcome a {
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+.welcome a {
+  text-decoration: underline;
 }
 .wrapper {
   flex: 1;
