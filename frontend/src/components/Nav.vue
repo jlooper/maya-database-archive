@@ -29,12 +29,7 @@
 
 						<nav class="menu auth">
 							<div class="menu-list auth">
-								<!---<template v-if="!userInfo">
-									<template v-for="provider in providers">
-										<Login :key="provider" :provider="provider" />
-									</template>
-								</template>--->
-								<Logout v-if="userInfo" />
+								<div v-if="userInfo" class="auth-link" @click="logout">Logout</div>
 							</div>
 						</nav>
 
@@ -71,23 +66,14 @@
 
 <script web>
 //import { mapState } from 'vuex';
-//import Login from '@/components/Login.vue';
-import Logout from '@/components/Logout.vue';
 
 export default {
 	name: 'my-navbar',
-	components: {
-		//Login,
-		Logout,
-	},
+
 	data() {
 		return {
 			//isLoggedIn: false,
-			userInfo: {
-				type: Object,
-				default() {},
-			},
-			providers: ['twitter', 'google', 'facebook'],
+			userInfo: Object,
 		};
 	},
 	computed: {
@@ -96,6 +82,9 @@ export default {
 	methods: {
 		logout() {
 			//this.$store.commit('clearUserId');
+			const redirect = `post_logout_redirect_uri=/home`;
+			const url = `/.auth/logout?${redirect}`;
+			window.location.href = url;
 		},
 		async getUserInfo() {
 			try {
@@ -118,6 +107,8 @@ export default {
 	},
 	async created() {
 		this.userInfo = await this.getUserInfo();
+		// eslint-disable-next-line no-console
+		console.log(this.userInfo);
 	},
 };
 </script>
