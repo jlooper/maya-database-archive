@@ -29,7 +29,7 @@
 
             <nav class="menu auth">
               <div class="menu-list auth">
-                <div v-if="userInfo" class="auth-link" @click="logout">Logout</div>
+                <div v-if="userInfo" class="navbar-item" @click="logout">Logout</div>
               </div>
             </nav>
 
@@ -55,12 +55,16 @@
         </div>
       </div>
     </nav>
-    <div class="user" v-if="userInfo">
-      <p>Welcome</p>
-      <p>{{ userInfo.userDetails }}</p>
-      <p>{{ userInfo.identityProvider }}</p>
+
+    <div class="has-background-link" height="5px">
+      <div v-if="userInfo">
+        <p>Welcome</p>
+        <p>
+          {{ userInfo.userDetails }}! View your
+          <router-link class="navbar-item" :to="'profile'">profile</router-link>
+        </p>
+      </div>
     </div>
-    <div class="has-background-link" height="5px">&nbsp;</div>
   </div>
 </template>
 
