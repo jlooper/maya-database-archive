@@ -5,7 +5,7 @@ import Profile from '@/views/Profile.vue';
 import About from '@/views/About.vue';
 import Home from '@/views/Home.vue';
 import Search from '@/views/Search.vue';
-import Lost from '@/views/Lost.vue';
+import Lost from '@/components/Lost.vue';
 import store from './store.js';
 
 Vue.use(Router);
