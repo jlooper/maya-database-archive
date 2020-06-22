@@ -1,18 +1,6 @@
 {
 	"routes": [
 		{
-			"route": "/.auth/login/facebook",
-			"statusCode": "404"
-		},
-		{
-			"route": "/.auth/login/google",
-			"statusCode": "404"
-		},
-		{
-			"route": "/.auth/login/twitter",
-			"statusCode": "404"
-		},
-		{
 			"route": "/profile",
 			"allowedRoles": ["authenticated"]
 		},
