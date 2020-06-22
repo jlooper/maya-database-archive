@@ -27,17 +27,13 @@
 					<div class="navbar-item">
 						<router-link class="navbar-item" :to="'about'">About</router-link>
 
-						<!---<span v-if="userId != null"><a href="/" class="navbar-item" @click="logout">Logout</a></span>
-						<span v-if="userId == null">
-							<router-link class="navbar-item" :to="'login'">Login</router-link>
-            --->
 						<nav class="menu auth">
 							<div class="menu-list auth">
-								<template v-if="!userInfo">
+								<!---<template v-if="!userInfo">
 									<template v-for="provider in providers">
 										<Login :key="provider" :provider="provider" />
 									</template>
-								</template>
+								</template>--->
 								<Logout v-if="userInfo" />
 							</div>
 						</nav>
@@ -75,13 +71,13 @@
 
 <script web>
 //import { mapState } from 'vuex';
-import Login from '@/components/Login.vue';
+//import Login from '@/components/Login.vue';
 import Logout from '@/components/Logout.vue';
 
 export default {
 	name: 'my-navbar',
 	components: {
-		Login,
+		//Login,
 		Logout,
 	},
 	data() {
