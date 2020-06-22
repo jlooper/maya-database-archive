@@ -58,9 +58,7 @@
 
     <div class="has-background-link" height="5px">
       <div v-if="userInfo">
-        <p>Welcome</p>
-        <p>
-          {{ userInfo.userDetails }}! View your
+        <p class="text-white">Welcome, {{ userInfo.userDetails }}! View your
           <router-link class="navbar-item" :to="'profile'">profile</router-link>
         </p>
       </div>
