@@ -19,13 +19,56 @@ export default {
 };
 </script>
 
-<style scoped>
-footer {
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	z-index: 30;
-	padding: 10px;
-}
+<style lang="scss">
+@import '~bulma/sass/utilities/_all';
+$primary: #bd8d46;
+$base: #fcfae1;
+$info: #f6e497;
+$warning: #b9121b;
+$link: #9a0b09;
+$colors: (
+	'white': (
+		$white,
+		$black,
+	),
+	'black': (
+		$black,
+		$white,
+	),
+	'light': (
+		$light,
+		$light-invert,
+	),
+	'dark': (
+		$dark,
+		$dark-invert,
+	),
+	'primary': (
+		$primary,
+		$primary-invert,
+	),
+	'info': (
+		$info,
+		$info-invert,
+	),
+	'success': (
+		$success,
+		$success-invert,
+	),
+	'warning': (
+		$warning,
+		$warning-invert,
+	),
+	'danger': (
+		$danger,
+		$danger-invert,
+	),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
 </style>

@@ -1,73 +1,43 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-
-import Profile from '@/views/Profile.vue';
-import About from '@/views/About.vue';
-import Home from '@/views/Home.vue';
-import Search from '@/views/Search.vue';
-import Lost from '@/views/Lost.vue';
-import Login from '@/views/Login.vue';
-import Register from '@/views/Register.vue';
-
-import store from './store.js';
+import PageNotFound from '@/components/Lost.vue';
 
 Vue.use(Router);
 
-const router = new Router({
+export default new Router({
 	mode: 'history',
 	base: process.env.BASE_URL,
 	routes: [
 		{
 			path: '/',
-			name: 'home',
-			component: Home,
-		},
-		{
-			path: '/login',
-			name: 'login',
-			component: Login,
-		},
-		{
-			path: '/register',
-			name: 'register',
-			component: Register,
-		},
-
-		{
-			path: '/search',
-			name: 'search',
-			component: Search,
-		},
-
-		{
-			path: '/about',
-			name: 'about',
-			component: About,
+			redirect: '/home',
 		},
 		{
 			path: '/profile',
 			name: 'profile',
-			component: Profile,
-			meta: {
-				requiresAuth: true,
-			},
+			component: () => import(/* webpackChunkName: "products" */ './views/Profile.vue'),
 		},
 		{
-			path: '/error',
-			name: 'error',
-			component: Lost,
+			path: '/about',
+			name: 'about',
+			component: () => import(/* webpackChunkName: "products" */ './views/About.vue'),
+		},
+		{
+			path: '/search',
+			name: 'search',
+			component: () => import(/* webpackChunkName: "discount" */ './views/Search.vue'),
+		},
+		{
+			path: '/home',
+			name: 'home',
+			// route level code-splitting
+			// this generates a separate chunk (home.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "home" */ './views/Home.vue'),
+		},
+		{
+			path: '*',
+			component: PageNotFound,
 		},
 	],
 });
-router.beforeEach((to, from, next) => {
-	if (to.matched.some((record) => record.meta.requiresAuth)) {
-		if (store.getters.isLoggedIn) {
-			next();
-			return;
-		}
-		next('/login');
-	} else {
-		next();
-	}
-});
-export default router;

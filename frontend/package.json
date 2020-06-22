@@ -2,14 +2,10 @@
 	"name": "mayaHieroglyphDatabase",
 	"version": "0.1.0",
 	"private": true,
-	"main": "./src/assets/sass/styles.scss",
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"build": "npm run css-build && vue-cli-service build",
-		"lint": "vue-cli-service lint",
-		"css-build": "node-sass --omit-source-map-url ./src/assets/sass/styles.scss ./public/css/styles.css",
-		"css-watch": "npm run css-build -- --watch",
-		"start": "npm run css-watch"
+		"lint": "vue-cli-service lint"
 	},
 	"dependencies": {
 		"axios": "^0.19.2",
@@ -19,6 +15,7 @@
 		"moment-timezone": "^0.5.27",
 		"odata": "^1.0.4",
 		"odata-client": "^0.6.13",
+		"sass-loader": "^8.0.2",
 		"vue": "^2.6.10",
 		"vue-moment": "^4.1.0",
 		"vue-router": "^3.0.3",
@@ -33,7 +30,7 @@
 		"babel-eslint": "^10.0.1",
 		"eslint": "^5.16.0",
 		"eslint-plugin-vue": "^5.0.0",
-		"node-sass": "^4.13.1",
+		"node-sass": "^4.14.1",
 		"vue-template-compiler": "^2.6.10"
 	},
 	"eslintConfig": {
