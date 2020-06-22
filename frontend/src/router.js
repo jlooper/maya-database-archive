@@ -1,43 +1,60 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import PageNotFound from '@/components/Lost.vue';
+
+import Profile from '@/views/Profile.vue';
+import About from '@/views/About.vue';
+import Home from '@/views/Home.vue';
+import Search from '@/views/Search.vue';
+import Lost from '@/views/Lost.vue';
+import store from './store.js';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
 	mode: 'history',
 	base: process.env.BASE_URL,
 	routes: [
 		{
 			path: '/',
-			redirect: '/home',
+			name: 'home',
+			component: Home,
+		},
+
+		{
+			path: '/search',
+			name: 'search',
+			component: Search,
+		},
+
+		{
+			path: '/about',
+			name: 'about',
+			component: About,
 		},
 		{
 			path: '/profile',
 			name: 'profile',
-			component: () => import(/* webpackChunkName: "products" */ './views/Profile.vue'),
+			component: Profile,
+			meta: {
+				requiresAuth: true,
+			},
 		},
 		{
-			path: '/about',
-			name: 'about',
-			component: () => import(/* webpackChunkName: "products" */ './views/About.vue'),
-		},
-		{
-			path: '/search',
-			name: 'search',
-			component: () => import(/* webpackChunkName: "discount" */ './views/Search.vue'),
-		},
-		{
-			path: '/home',
-			name: 'home',
-			// route level code-splitting
-			// this generates a separate chunk (home.[hash].js) for this route
-			// which is lazy-loaded when the route is visited.
-			component: () => import(/* webpackChunkName: "home" */ './views/Home.vue'),
-		},
-		{
-			path: '*',
-			component: PageNotFound,
+			path: '/error',
+			name: 'error',
+			component: Lost,
 		},
 	],
 });
+router.beforeEach((to, from, next) => {
+	if (to.matched.some((record) => record.meta.requiresAuth)) {
+		if (store.getters.isLoggedIn) {
+			next();
+			return;
+		}
+		next('/home');
+	} else {
+		next();
+	}
+});
+export default router;
