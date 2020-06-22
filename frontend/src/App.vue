@@ -65,10 +65,15 @@ $colors: (
 	),
 );
 
-// Links
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
 @import '~bulma';
 @import '~buefy/src/scss/buefy';
+
+footer {
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: 30;
+	padding: 10px;
+}
 </style>
