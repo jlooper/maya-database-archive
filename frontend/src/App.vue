@@ -63,17 +63,12 @@ $colors: (
 		$danger,
 		$danger-invert,
 	),
+	'link': (
+		$link,
+		$link-invert,
+	),
 );
 
 @import '~bulma';
 @import '~buefy/src/scss/buefy';
-
-footer {
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	z-index: 30;
-	padding: 10px;
-}
 </style>
