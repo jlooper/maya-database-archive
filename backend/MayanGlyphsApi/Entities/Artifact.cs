@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using Newtonsoft.Json;
 
 namespace MayanGlyphsApi.Models
 {
@@ -12,15 +11,15 @@ namespace MayanGlyphsApi.Models
         [BsonRepresentation(BsonType.ObjectId)]
         [BsonElement("_id")]
         [JsonIgnore]
-        public ObjectId Id { get; set; }
-
-        [BsonElement("id")]
-        public int RecId { get; set; }
+        [System.Text.Json.Serialization.JsonIgnore]
+        public string Id { get; set; }
 
         [BsonElement("objclass")]
+        [JsonProperty("objclass")]
         public string Class { get; set; }
 
         [BsonElement("objmaterial")]
+        [JsonProperty("objmaterial")]
         public string Material { get; set; }
 
         [BsonElement("objtechnique")]
@@ -33,6 +32,7 @@ namespace MayanGlyphsApi.Models
         public string RegionDestination { get; set; }
 
         [BsonElement("blosort")]
+        [JsonProperty("blosort")]
         public string BlockSort { get; set; }
 
         [BsonElement("objabbr1")]
@@ -46,6 +46,15 @@ namespace MayanGlyphsApi.Models
 
         [BsonElement("objsitecodedestination")]
         public string SiteCodeDestination { get; set; }
+
+        [BsonElement("obj_almanpgs")]
+        public string Almanpgs { get; set; }
+
+        [BsonElement("objstructure_almanac")]
+        public string StructureAlmanac { get; set; }
+
+        [BsonElement("objorientation_frame")]
+        public string OrientationFrame { get; set; }
 
         [BsonElement("objimage1")]
         public string OImage1 { get; set; }
@@ -73,7 +82,7 @@ namespace MayanGlyphsApi.Models
 
         [BsonElement("obj365")]
         public string Cycl365 { get; set; }
-        
+
         [BsonElement("objHellmuthNum")]
         public string HellmuthNum { get; set; }
 
@@ -83,14 +92,13 @@ namespace MayanGlyphsApi.Models
         [BsonElement("objMSNum")]
         public string MSNum { get; set; }
 
-        //[BsonElement("blcoordinate")]
-        //public string Coordinate { get; set; }
+        [BsonElement("blcoordinate")]
+        [JsonProperty("blcoordinate")]
+        public string Coordinate { get; set; }
 
         [BsonElement("blsurface")]
+        [JsonProperty("blsurface")]
         public string Surface { get; set; }
-
-        [BsonExtraElements]
-        public IDictionary<string, object> Extras { get; set; }
 
         [BsonElement("blimage1")]
         public string BImage1 { get; set; }
@@ -101,5 +109,64 @@ namespace MayanGlyphsApi.Models
         [BsonElement("blimagenotes")]
         public string ImageNotes { get; set; }
 
+        [BsonElement("blocklogosyllabic")]
+        public string Blocklogosyllabic { get; set; }
+
+        [BsonElement("Hyphenated")]
+        public string Hyphenated { get; set; }
+
+        [BsonElement("bleng")]
+        public string BlEng { get; set; }
+
+        [BsonElement("blspan")]
+        public string BlSpan { get; set; }
+
+        [BsonElement("blgraphcodes")]
+        public string GraphCodes { get; set; }
+
+        [BsonElement("blepigraphicreading")]
+        public string EpigraphicReading { get; set; }
+
+        [BsonElement("Evidence")]
+        public string Evidence { get; set; }
+
+        [BsonElement("substitution")]
+        public string Substitution { get; set; }
+
+        [BsonElement("blsem")]
+        public string Sem { get; set; }
+
+        [BsonElement("blevlc")]
+        public string Evlc { get; set; }
+
+        [BsonElement("blevcal")]
+        public string Evcal { get; set; }
+
+        [BsonElement("blev260")]
+        public string Ev260 { get; set; }
+
+        [BsonElement("locabbr")]
+        public string LocAbbr { get; set; }
+
+        [BsonElement("locaccessionNum")]
+        public string LocAccessionNum { get; set; }
+
+        [BsonElement("blblocknotes")]
+        public string BlockNotes { get; set; }
+
+        [BsonElement("loccountry")]
+        public string LocCountry { get; set; }
+
+        [BsonElement("clauseID")]
+        public string ClauseID { get; set; }
+
+        [BsonElement("Clause_Engl")]
+        public string ClauseEngl { get; set; }
+
+        [BsonElement("Clause_Span")]
+        public string ClauseSpan { get; set; }
+
+        [BsonExtraElements]
+        public IDictionary<string, object> Extras { get; set; }
     }
 }
