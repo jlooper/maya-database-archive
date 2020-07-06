@@ -1,12 +1,15 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+import Geo from '@/views/Geo.vue';
 import Profile from '@/views/Profile.vue';
 import About from '@/views/About.vue';
 import Home from '@/views/Home.vue';
 import Search from '@/views/Search.vue';
-import Lost from '@/views/Lost.vue';
-import Login from '@/views/Login.vue';
+
+import Lost from '@/components/Lost.vue';
+
+import store from './store.js';
 
 Vue.use(Router);
 
@@ -20,15 +23,19 @@ const router = new Router({
 			component: Home,
 		},
 		{
-			path: '/login',
-			name: 'login',
-			component: Login,
+			path: '/home',
+			name: 'home',
+			component: Home,
 		},
-
 		{
 			path: '/search',
 			name: 'search',
 			component: Search,
+		},
+		{
+			path: '/map',
+			name: 'map',
+			component: Geo,
 		},
 
 		{
@@ -40,7 +47,9 @@ const router = new Router({
 			path: '/profile',
 			name: 'profile',
 			component: Profile,
-			//beforeEnter: authGuard,
+			meta: {
+				requiresAuth: true,
+			},
 		},
 		{
 			path: '/error',
@@ -49,5 +58,15 @@ const router = new Router({
 		},
 	],
 });
-
+router.beforeEach((to, from, next) => {
+	if (to.matched.some((record) => record.meta.requiresAuth)) {
+		if (store.getters.isLoggedIn) {
+			next();
+			return;
+		}
+		next('/');
+	} else {
+		next();
+	}
+});
 export default router;

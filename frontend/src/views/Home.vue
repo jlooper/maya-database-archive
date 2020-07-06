@@ -10,6 +10,29 @@
             >The Maya Database and Archive can help you discover Maya Glyphs</h2>
 
             <router-link class="button is-large is-link" :to="'search'">Search the Database</router-link>
+
+            <div class="button-box">
+              <b-button
+                class="social-button twitter"
+                @click="Auth('twitter')"
+                size="is-medium"
+                icon-left="twitter"
+              >Login with Twitter</b-button>
+
+              <b-button
+                class="social-button facebook"
+                @click="Auth('facebook')"
+                size="is-medium"
+                icon-left="facebook"
+              >Login with Facebook</b-button>
+
+              <b-button
+                class="social-button google"
+                @click="Auth('google')"
+                size="is-medium"
+                icon-left="google"
+              >Login with Google</b-button>
+            </div>
           </div>
 
           <div class="column is-half is-centered">
@@ -74,16 +97,35 @@
 <script>
 export default {
   name: "app",
-  data() {
-    return {
-      //showMenu: false
-    };
-  },
-  methods: {}
+  methods: {
+    Auth(provider) {
+      const redirect = `post_login_redirect_uri=/home`;
+      const url = `/.auth/login/${provider}?${redirect}`;
+      window.location.href = url;
+    }
+  }
 };
 </script>
 
 <style scoped>
+.button-box {
+  margin-top: 10px;
+}
+.social-button {
+  margin-right: 5px;
+}
+.twitter {
+  color: white;
+  background-color: #55acee;
+}
+.facebook {
+  color: white;
+  background-color: #3b5998;
+}
+.google {
+  color: white;
+  background-color: #34a853;
+}
 .card {
   border-radius: 5px;
   margin: 5px;
@@ -96,6 +138,6 @@ export default {
   padding-top: 10px;
 }
 .content-wrapper {
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 </style>

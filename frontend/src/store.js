@@ -1,22 +1,31 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-//import createPersistedState from 'vuex-persistedstate';
+import createPersistedState from 'vuex-persistedstate';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
 	state: {
-		user: null,
+		userId: null,
 	},
-	//plugins: [createPersistedState()],
+	plugins: [createPersistedState()],
 	mutations: {
-		setUser: (state, user) => {
-			state.user = user;
+		setUserId: (state, userId) => {
+			state.userId = userId;
+		},
+		clearUserId: (state) => {
+			state.userId = null;
 		},
 	},
+	getters: {
+		isLoggedIn: (state) => !!state.userId,
+	},
 	actions: {
-		setUser({ commit }, user) {
-			commit('setUser', user);
+		setUserId({ commit }, userId) {
+			commit('setUserId', userId);
+		},
+		clearUserId({ commit }) {
+			commit('clearUserId');
 		},
 	},
 });
