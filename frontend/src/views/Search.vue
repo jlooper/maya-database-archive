@@ -3,7 +3,6 @@
     <div id="search" class="box main-content">
       <h1 class="title">Search</h1>
       <p class="has-text-danger">{{ message }}</p>
-
       <hr />
       <form @submit.prevent="submit">
         <div class="field is-grouped">
@@ -11,6 +10,7 @@
             <div class="select">
               <div class="select">
                 <select :class="validClass" v-model.trim="$v.search_option_1.$model">
+                  <option value>Select</option>
                   <option v-for="c in cols" v-bind:key="c">{{ c }}</option>
                 </select>
               </div>
@@ -23,6 +23,7 @@
                 name="search_option_2"
                 v-model.trim="$v.search_option_2.$model"
               >
+                <option value>Select</option>
                 <option value="eq">=</option>
                 <option value="like">Like</option>
                 <option value="contains">contains</option>
@@ -39,6 +40,7 @@
           <div class="control">
             <div class="select">
               <select v-model="search_option_3">
+                <option value>Select</option>
                 <option v-for="c in cols" v-bind:key="c">{{ c }}</option>
               </select>
             </div>
@@ -46,7 +48,7 @@
           <div class="control">
             <div class="select">
               <select class="input" name="search_option_4" v-model="search_option_4">
-                <option value></option>
+                <option value>Select</option>
                 <option value="eq">=</option>
                 <option value="like">Like</option>
                 <option value="contains">contains</option>
@@ -59,6 +61,8 @@
         </div>
         <div class="field">
           <div class="control">
+            <button type="reset" class="button is-info">Clear</button>
+
             <button
               type="submit"
               :disabled="submitStatus === 'PENDING'"
@@ -115,7 +119,7 @@
           :sort-icon="sortIcon"
           :sort-icon-size="sortIconSize"
           :striped="true"
-          default-sort="RecId"
+          default-sort="Id"
           aria-next-label="Next page"
           aria-previous-label="Previous page"
           aria-page-label="Page"
@@ -123,13 +127,13 @@
         >
           <template slot-scope="props">
             <b-table-column
-              field="RecId"
-              :label="columnsVisible['RecId'].title"
-              :visible="columnsVisible['RecId'].display"
+              field="Id"
+              :label="columnsVisible['Id'].title"
+              :visible="columnsVisible['Id'].display"
               width="40"
               sortable
               numeric
-            >{{ props.row.RecId }}</b-table-column>
+            >{{ props.row.Id }}</b-table-column>
 
             <b-table-column
               field="Class"
@@ -254,7 +258,11 @@
         </b-table>
       </div>
     </section>
-    <b-loading :is-full-page="false" :active.sync="isLoading" :can-cancel="true"></b-loading>
+    <b-loading
+      :is-full-page="isFullPage"
+      :active.sync="artifacts.length == 0 && isLoading"
+      :can-cancel="true"
+    ></b-loading>
   </main>
 </template>
 
@@ -285,6 +293,7 @@ export default {
     return {
       submitStatus: null,
       isLoading: false,
+      isFullPage: false,
       artifacts: [],
       message: "",
       validClass: "input",
@@ -303,7 +312,7 @@ export default {
       currentPage: 1,
       perPage: 5,
       columnsVisible: {
-        RecId: { title: "Id", display: true },
+        Id: { title: "Id", display: true },
         Class: { title: "Class", display: true },
         Material: { title: "Material", display: true },
         Technique: { title: "Technique", display: true },
@@ -339,6 +348,8 @@ export default {
         this.submitStatus = "PENDING";
         this.validClass = "input";
         //start search
+        this.isLoading = true;
+
         let option1 = this.search_option_1;
         let option2 = this.search_option_2;
         let field1 = this.search_field_1;
@@ -348,6 +359,7 @@ export default {
         //$filter=material%20eq%20%27stone%27&surface%20eq%20west$top=30
 
         (async () => {
+          this.isLoading == false;
           var q = odata({
             format: "json",
             service: "https://mayan-glyphs.azurewebsites.net/odata/",
@@ -356,37 +368,29 @@ export default {
 
           if (option3 == null) {
             this.artifacts = await q
-              .top(30)
+              //.top(30)
               .filter(option1, option2, field1)
               .get()
               .then(function(response) {
                 let data = JSON.parse(response.body);
-                //if (data.value.length > 0) {
                 return data.value;
-                //}
               });
           } else {
             this.artifacts = await q
-              .top(30)
+              //.top(30)
               .filter(option1, option2, field1)
               .and(option3, option4, field2)
               .get()
               .then(function(response) {
                 let data = JSON.parse(response.body);
-                //if (data.value.length > 0) {
                 return data.value;
-                //}
               });
           }
         })();
 
-        this.isLoading = false;
         setTimeout(() => {
           this.submitStatus = "OK";
           this.validClass = "input";
-          /*if (this.artifacts.length == 0) {
-            this.message = "Sorry, no records found";
-          }*/
         }, 500);
       }
     }
@@ -407,5 +411,8 @@ p {
 .and {
   padding: 5px;
   font-weight: bold;
+}
+.button {
+  margin: 5px;
 }
 </style>
