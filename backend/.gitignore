@@ -219,3 +219,5 @@ UpgradeLog*.htm
 
 # GhostDoc plugin setting file
 *.GhostDoc.xml
+
+.idea/
