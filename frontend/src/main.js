@@ -5,6 +5,7 @@ import store from './store';
 import buefy from 'buefy';
 
 Vue.use(buefy);
+Vue.use(require('azure-maps-control'));
 Vue.config.productionTip = false;
 import Vuelidate from 'vuelidate';
 Vue.use(Vuelidate);
@@ -12,5 +13,5 @@ Vue.use(Vuelidate);
 new Vue({
 	store,
 	router,
-	render: h => h(App),
+	render: (h) => h(App),
 }).$mount('#app');

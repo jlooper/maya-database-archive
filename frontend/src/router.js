@@ -1,11 +1,14 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+import Geo from '@/views/Geo.vue';
 import Profile from '@/views/Profile.vue';
 import About from '@/views/About.vue';
 import Home from '@/views/Home.vue';
 import Search from '@/views/Search.vue';
+
 import Lost from '@/components/Lost.vue';
+
 import store from './store.js';
 
 Vue.use(Router);
@@ -28,6 +31,11 @@ const router = new Router({
 			path: '/search',
 			name: 'search',
 			component: Search,
+		},
+		{
+			path: '/map',
+			name: 'map',
+			component: Geo,
 		},
 
 		{
