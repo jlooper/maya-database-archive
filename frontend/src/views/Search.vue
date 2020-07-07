@@ -127,13 +127,41 @@
         >
           <template slot-scope="props">
             <b-table-column
-              field="Id"
-              :label="columnsVisible['Id'].title"
-              :visible="columnsVisible['Id'].display"
+              field="Almanpgs"
+              :label="columnsVisible['Almanpgs'].title"
+              :visible="columnsVisible['Almanpgs'].display"
               width="40"
               sortable
               numeric
-            >{{ props.row.Id }}</b-table-column>
+            >{{ props.row.Almanpgs }}</b-table-column>
+            <b-table-column
+              field="BImage1"
+              :label="columnsVisible['BImage1'].title"
+              :visible="columnsVisible['BImage1'].display"
+              width="40"
+              sortable
+              numeric
+            >
+              <b-button
+                @click="openImageModal(props.row.BImage1)"
+                v-if="props.row.BImage1 !== null"
+                icon-right="image"
+              ></b-button>
+            </b-table-column>
+            <b-table-column
+              field="BImage2"
+              :label="columnsVisible['BImage2'].title"
+              :visible="columnsVisible['BImage2'].display"
+              width="40"
+              sortable
+              numeric
+            >
+              <b-button
+                @click="openImageModal(props.row.BImage2)"
+                v-if="props.row.BImage2 !== null"
+                icon-right="image"
+              ></b-button>
+            </b-table-column>
 
             <b-table-column
               field="Class"
@@ -312,7 +340,10 @@ export default {
       currentPage: 1,
       perPage: 5,
       columnsVisible: {
-        Id: { title: "Id", display: true },
+        //Id: { title: "Id", display: false },
+        Almanpgs: { title: "Almanpgs", display: true },
+        BImage1: { title: "BImage1", display: true },
+        BImage2: { title: "BImage2", display: true },
         Class: { title: "Class", display: true },
         Material: { title: "Material", display: true },
         Technique: { title: "Technique", display: true },
@@ -335,6 +366,13 @@ export default {
   },
 
   methods: {
+    openImageModal(img) {
+      this.$buefy.modal.open(
+        `<p class="image is-4by3">
+            <img :src=https://mayadatabaseblob.blob.core.windows.net/maya-db-container/${img}>
+          </p>`
+      );
+    },
     submit() {
       this.isLoading = true;
       this.message = "";
