@@ -19,7 +19,7 @@ namespace MayanGlyphsApi.Data
         public MongoDocumentStore(IMongoClient mongoClient)
         {
             this._mongoClient = mongoClient;
-            this._database = this._mongoClient.GetDatabase("maya-glyph-db");
+            this._database = this._mongoClient.GetDatabase("maya-db");
         }
 
         public async Task<List<Artifact>> GetArtifacts(int page = 1, int limit = 10)

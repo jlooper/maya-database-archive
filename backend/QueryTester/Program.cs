@@ -23,8 +23,8 @@ namespace QueryTester
             var config = builder.Build();
 
             var mongoClient = new MongoClient(config["COSMOSCONNECTION"]);
-            var database = mongoClient.GetDatabase("maya-glyph-db");
-            var queryableCollection = database.GetCollection<Artifact>("glyphs").AsQueryable<Artifact>();
+            var database = mongoClient.GetDatabase("maya-db");
+            var queryableCollection = database.GetCollection<Artifact>("objects").AsQueryable<Artifact>();
 
             var query = (from art in queryableCollection
                          where art.Surface != string.Empty
@@ -46,7 +46,7 @@ namespace QueryTester
         {
             //CosmosClient cosmos = new CosmosClient("AccountEndpoint=https://maya-glyph-cos-sql.documents.azure.com:443/;AccountKey=QrdVHJxKtjRRWonNvIIZWTOdaPMtmcTa3GfYbHiq22SKelNzqDiRFeduuOv6CtG54IXiftyyWhjcLXeneapBZg==;");
             CosmosClient cosmos = new CosmosClient("https://maya-glyph-cos-sql.documents.azure.com:443/", "QrdVHJxKtjRRWonNvIIZWTOdaPMtmcTa3GfYbHiq22SKelNzqDiRFeduuOv6CtG54IXiftyyWhjcLXeneapBZg==");
-            Container container = cosmos.GetContainer("maya-glyph-cos-sql", "glyphs");
+            Container container = cosmos.GetContainer("maya-glyph-cos-sql", "objects");
             var queryableContainer = container.GetItemLinqQueryable<Artifact>();
 
 
