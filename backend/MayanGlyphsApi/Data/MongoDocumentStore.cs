@@ -12,7 +12,7 @@ namespace MayanGlyphsApi.Data
 {
     public class MongoDocumentStore : IDocumentStore
     {
-        private const string COLLECTION_NAME = "glyphs";
+        private const string COLLECTION_NAME = "objects";
         private readonly IMongoClient _mongoClient;
         private readonly IMongoDatabase _database;
 
