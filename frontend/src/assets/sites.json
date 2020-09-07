@@ -1,0 +1,3505 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.56046, 17.21927]
+			},
+			"properties": {
+				"sitecode": "CRZ",
+				"sitename": "Corozal",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 865869.8478,
+				"point_y": 1907065.779
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.96977, 20.18501]
+			},
+			"properties": {
+				"sitecode": "CPH",
+				"sitename": "Cumpich",
+				"refShort": "Dunning 1992",
+				"point_x": 816719.1848,
+				"point_y": 2234846.516
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.931403, 16.867245]
+			},
+			"properties": {
+				"sitecode": "DCB",
+				"sitename": "Dos Caobas",
+				"refShort": "",
+				"point_x": 720358.8831,
+				"point_y": 1866023.563
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.303325, 16.437125]
+			},
+			"properties": {
+				"sitecode": "DPL",
+				"sitename": "Dos Pilas",
+				"refShort": "",
+				"point_x": 787975.8075,
+				"point_y": 1819207.285
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [0, 0]
+			},
+			"properties": {
+				"sitecode": "DRE",
+				"sitename": "Dresden",
+				"refShort": "Dresden Codex",
+				"point_x": null,
+				"point_y": null
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.74031667, 20.16845]
+			},
+			"properties": {
+				"sitecode": "DZC",
+				"sitename": "Dzecilna",
+				"refShort": "Mayer 2009",
+				"point_x": 840756.8162,
+				"point_y": 2233466.725
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.9695, 19.65868]
+			},
+			"properties": {
+				"sitecode": "DZK",
+				"sitename": "Dzehkabtun",
+				"refShort": "Muller 1960",
+				"point_x": 817799.235,
+				"point_y": 2176540.839
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.587333, 18.784771]
+			},
+			"properties": {
+				"sitecode": "DZB",
+				"sitename": "Dzibanche",
+				"refShort": "",
+				"point_x": 965321.718,
+				"point_y": 2082839.886
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.598902, 21.096544]
+			},
+			"properties": {
+				"sitecode": "DBC",
+				"sitename": "Dzibilchaltun",
+				"refShort": "",
+				"point_x": 853399.1493,
+				"point_y": 2336610.952
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.474264, 19.49345]
+			},
+			"properties": {
+				"sitecode": "DBN",
+				"sitename": "Dzibilnocac",
+				"refShort": "",
+				"point_x": 870134.0809,
+				"point_y": 2159280.983
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.230111, 19.596661]
+			},
+			"properties": {
+				"sitecode": "EDZ",
+				"sitename": "Edzna",
+				"refShort": "",
+				"point_x": 790564.0105,
+				"point_y": 2169205.771
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-87.937639, 20.935247]
+			},
+			"properties": {
+				"sitecode": "EKB",
+				"sitename": "Ek Balam",
+				"refShort": "",
+				"point_x": 1026842.379,
+				"point_y": 2323312.263
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.21246, 17.06436]
+			},
+			"properties": {
+				"sitecode": "CAY",
+				"sitename": "El Cayo",
+				"refShort": "",
+				"point_x": 690232.1994,
+				"point_y": 1887545.878
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.651773, 16.634663]
+			},
+			"properties": {
+				"sitecode": "CHL",
+				"sitename": "El Chal",
+				"refShort": "",
+				"point_x": 857203.272,
+				"point_y": 1842105.488
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.11824, 16.95522]
+			},
+			"properties": {
+				"sitecode": "CZP",
+				"sitename": "El Chicozapote",
+				"refShort": "Pina Chan 1967",
+				"point_x": 700378.2319,
+				"point_y": 1875561.097
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.569569, 16.649711]
+			},
+			"properties": {
+				"sitecode": "CRO",
+				"sitename": "El Chorro",
+				"refShort": "",
+				"point_x": 759244.4903,
+				"point_y": 1842356.285
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.55353, 17.27698]
+			},
+			"properties": {
+				"sitecode": "ENC",
+				"sitename": "El Encanto",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 866493.5615,
+				"point_y": 1913472.84
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.91109251, 16.82749024]
+			},
+			"properties": {
+				"sitecode": "KIN",
+				"sitename": "El Kinel",
+				"refShort": "Houston et al. 2006",
+				"point_x": 722593.8207,
+				"point_y": 1861646.348
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.54653, 16.47506]
+			},
+			"properties": {
+				"sitecode": "PAB",
+				"sitename": "El Pabellon",
+				"refShort": "Pina Chan 1967",
+				"point_x": 761939.0366,
+				"point_y": 1823076.227
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.230429, 18.012903]
+			},
+			"properties": {
+				"sitecode": "PLM",
+				"sitename": "El Palmar",
+				"refShort": "",
+				"point_x": 899238.0299,
+				"point_y": 1995703
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.35578, 17.26605]
+			},
+			"properties": {
+				"sitecode": "PRU",
+				"sitename": "El Peru",
+				"refShort": "",
+				"point_x": 781141.9697,
+				"point_y": 1910913.698
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.29605, 17.18705]
+			},
+			"properties": {
+				"sitecode": "PVR",
+				"sitename": "El Porvenir",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 681215.2684,
+				"point_y": 1901044.04
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.009983, 14.883477]
+			},
+			"properties": {
+				"sitecode": "RAM",
+				"sitename": "Río Amarillo",
+				"refShort": "",
+				"point_x": 929442.8517,
+				"point_y": 1649307.642
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.379477, 18.33961]
+			},
+			"properties": {
+				"sitecode": "RBC",
+				"sitename": "Río Bec",
+				"refShort": "",
+				"point_x": 882719.759,
+				"point_y": 2031567.445
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.612303, 18.219492]
+			},
+			"properties": {
+				"sitecode": "MCA",
+				"sitename": "La Muñeca",
+				"refShort": "",
+				"point_x": 858353.7355,
+				"point_y": 2017759.895
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.64349, 17.02105]
+			},
+			"properties": {
+				"sitecode": "ZAP",
+				"sitename": "El Zapote",
+				"refShort": "Rice and Puleston 1981 Fig. 6.",
+				"point_x": 857408.4441,
+				"point_y": 1884950.692
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.79578, 17.24475]
+			},
+			"properties": {
+				"sitecode": "ZTZ",
+				"sitename": "El Zotz",
+				"refShort": "",
+				"point_x": 840769.1631,
+				"point_y": 1909457.736
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.69374757, 20.80614564]
+			},
+			"properties": {
+				"sitecode": "HTZ",
+				"sitename": "Hacienda Hotzuc",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 844200.4008,
+				"point_y": 2304223.794
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.5362151, 20.69124401]
+			},
+			"properties": {
+				"sitecode": "HLK",
+				"sitename": "Halakal",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 965218.7254,
+				"point_y": 2294389.531
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.91295, 20.07898]
+			},
+			"properties": {
+				"sitecode": "HLL",
+				"sitename": "Halal",
+				"refShort": "Witschey 2009",
+				"point_x": 822880.4188,
+				"point_y": 2223209.546
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.97182, 20.1922]
+			},
+			"properties": {
+				"sitecode": "HLT",
+				"sitename": "Haltunchon",
+				"refShort": "Dunning 1992",
+				"point_x": 816490.224,
+				"point_y": 2235639.116
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.18946, 20.05225]
+			},
+			"properties": {
+				"sitecode": "HBM",
+				"sitename": "Hobomo",
+				"refShort": "Muller 1960",
+				"point_x": 793990.8478,
+				"point_y": 2219737.046
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.77168844, 19.40775095]
+			},
+			"properties": {
+				"sitecode": "HCH",
+				"sitename": "Hochob",
+				"refShort": "Kelly 1993",
+				"point_x": 839084.0139,
+				"point_y": 2149121.845
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.58903, 20.11699]
+			},
+			"properties": {
+				"sitecode": "HNT",
+				"sitename": "Huntichmul 01",
+				"refShort": "Dunning 1992",
+				"point_x": 856702.9099,
+				"point_y": 2228082.375
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.93962, 20.20899]
+			},
+			"properties": {
+				"sitecode": "ICC",
+				"sitename": "Ichmac",
+				"refShort": "Dunning 1992",
+				"point_x": 819823.7092,
+				"point_y": 2237560.997
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.24577, 18.58996]
+			},
+			"properties": {
+				"sitecode": "ICP",
+				"sitename": "Ichpaatun",
+				"refShort": "Muller 1959",
+				"point_x": 1002057.291,
+				"point_y": 2062109.587
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.8143523, 20.61431122]
+			},
+			"properties": {
+				"sitecode": "IKL",
+				"sitename": "Ikil",
+				"refShort": "Kelly 1993",
+				"point_x": 936411.0117,
+				"point_y": 2285082.644
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.482403, 16.582147]
+			},
+			"properties": {
+				"sitecode": "ITN",
+				"sitename": "Itzan",
+				"refShort": "",
+				"point_x": 768592.7495,
+				"point_y": 1835040.257
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.73094, 20.015743]
+			},
+			"properties": {
+				"sitecode": "ITB",
+				"sitename": "Itzimte-Bolonchen",
+				"refShort": "",
+				"point_x": 842000.1579,
+				"point_y": 2216540.03
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.41604, 16.53799]
+			},
+			"properties": {
+				"sitecode": "IXK",
+				"sitename": "Ixkun",
+				"refShort": "",
+				"point_x": 882621.1913,
+				"point_y": 1831855.907
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.68657, 16.97821]
+			},
+			"properties": {
+				"sitecode": "IXL",
+				"sitename": "Ixlu",
+				"refShort": "",
+				"point_x": 852849.1915,
+				"point_y": 1880150.51
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.474793, 16.446697]
+			},
+			"properties": {
+				"sitecode": "IXZ",
+				"sitename": "Ixtutz",
+				"refShort": "",
+				"point_x": 876470.6976,
+				"point_y": 1821653.798
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.48823, 20.21168]
+			},
+			"properties": {
+				"sitecode": "JAI",
+				"sitename": "Jaina",
+				"refShort": "",
+				"point_x": 762455.7031,
+				"point_y": 2236894.54
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.615759, 17.301961]
+			},
+			"properties": {
+				"sitecode": "JMB",
+				"sitename": "Jimbal",
+				"refShort": "",
+				"point_x": 859695.5812,
+				"point_y": 1916212.284
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [0, 0]
+			},
+			"properties": {
+				"sitecode": "COL",
+				"sitename": "Collections",
+				"refShort": "",
+				"point_x": null,
+				"point_y": null
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.495554, 20.937543]
+			},
+			"properties": {
+				"sitecode": "ACA",
+				"sitename": "Acanceh",
+				"refShort": "",
+				"point_x": 864522.0109,
+				"point_y": 2319163.258
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.3254, 19.90093333]
+			},
+			"properties": {
+				"sitecode": "ACN",
+				"sitename": "Acanmul",
+				"refShort": "Mayer 2006",
+				"point_x": 780030.4224,
+				"point_y": 2202744.603
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.038087, 16.886403]
+			},
+			"properties": {
+				"sitecode": "TNA",
+				"sitename": "Toniná",
+				"refShort": "",
+				"point_x": 602431.0103,
+				"point_y": 1867213.486
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.876111, 20.487216]
+			},
+			"properties": {
+				"sitecode": "MPL",
+				"sitename": "Mopila",
+				"refShort": "Friedel 1986",
+				"point_x": 930537.2299,
+				"point_y": 2269736.436
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.733025, 20.417824]
+			},
+			"properties": {
+				"sitecode": "KCB",
+				"sitename": "Kancabdznot",
+				"refShort": "Friedel 1986",
+				"point_x": 945458.0975,
+				"point_y": 2263512.759
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.380163, 16.57995]
+			},
+			"properties": {
+				"sitecode": "AGC",
+				"sitename": "Aguas Calientes",
+				"refShort": "",
+				"point_x": 779489.727,
+				"point_y": 1834823.176
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.20615, 16.3883]
+			},
+			"properties": {
+				"sitecode": "AGT",
+				"sitename": "Aguateca",
+				"refShort": "",
+				"point_x": 798434.4339,
+				"point_y": 1813941.869
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.84676, 20.15094]
+			},
+			"properties": {
+				"sitecode": "AMC",
+				"sitename": "Almuchil",
+				"refShort": "Dunning 1992",
+				"point_x": 829657.6339,
+				"point_y": 2231311.68
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.53636498, 17.97735452]
+			},
+			"properties": {
+				"sitecode": "ALM",
+				"sitename": "Altamira",
+				"refShort": "Sprajc 2008",
+				"point_x": 866898.3948,
+				"point_y": 1991105.889
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.305705, 17.928013]
+			},
+			"properties": {
+				"sitecode": "ALR",
+				"sitename": "Altar de los Reyes",
+				"refShort": "",
+				"point_x": 891395.0341,
+				"point_y": 1986197.111
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.5307, 16.47268]
+			},
+			"properties": {
+				"sitecode": "ALS",
+				"sitename": "Altar de Sacrificios",
+				"refShort": "",
+				"point_x": 763633.1935,
+				"point_y": 1822833.36
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.348655, 17.759715]
+			},
+			"properties": {
+				"sitecode": "ALH",
+				"sitename": "Altun Ha",
+				"refShort": "",
+				"point_x": 993510.4065,
+				"point_y": 1969721.542
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.096743, 16.505193]
+			},
+			"properties": {
+				"sitecode": "ANL",
+				"sitename": "Anonal",
+				"refShort": "",
+				"point_x": 809932.799,
+				"point_y": 1827017.877
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.264143, 16.451331]
+			},
+			"properties": {
+				"sitecode": "ARP",
+				"sitename": "Arroyo de Piedra",
+				"refShort": "",
+				"point_x": 792093.2852,
+				"point_y": 1820860.564
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.58504777, 17.8821909]
+			},
+			"properties": {
+				"sitecode": "BLK",
+				"sitename": "Balakbal",
+				"refShort": "Sprajc 2008",
+				"point_x": 861930.1704,
+				"point_y": 1980466.408
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.466167, 18.5165]
+			},
+			"properties": {
+				"sitecode": "BCN",
+				"sitename": "Becan",
+				"refShort": "",
+				"point_x": 873186.8022,
+				"point_y": 2050988.772
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.76916466, 17.28211906]
+			},
+			"properties": {
+				"sitecode": "BJC",
+				"sitename": "Bejucal",
+				"refShort": "Ford 2004 SEGEPLAN",
+				"point_x": 843532.8421,
+				"point_y": 1913644.466
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.952263, 17.196759]
+			},
+			"properties": {
+				"sitecode": "BME",
+				"sitename": "Blackman Eddy",
+				"refShort": "",
+				"point_x": 930651.6525,
+				"point_y": 1905848.822
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.67092, 20.096746]
+			},
+			"properties": {
+				"sitecode": "BLN",
+				"sitename": "Bolonchen",
+				"refShort": "",
+				"point_x": 848130.3165,
+				"point_y": 2225639.928
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.064833, 16.7045]
+			},
+			"properties": {
+				"sitecode": "BPK",
+				"sitename": "Bonampak",
+				"refShort": "",
+				"point_x": 706338.4523,
+				"point_y": 1847867.679
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.11820725, 17.14878156]
+			},
+			"properties": {
+				"sitecode": "BNN",
+				"sitename": "Buenavista del Cayo",
+				"refShort": "Ford 2004 NGS map",
+				"point_x": 913126.0783,
+				"point_y": 1900145.025
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.19037, 19.94627]
+			},
+			"properties": {
+				"sitecode": "CCB",
+				"sitename": "Cacabbeec",
+				"refShort": "Witschey 2009",
+				"point_x": 794092.631,
+				"point_y": 2207996.815
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.810333, 18.1045]
+			},
+			"properties": {
+				"sitecode": "CLK",
+				"sitename": "Calakmul",
+				"refShort": "",
+				"point_x": 837608.6954,
+				"point_y": 2004669.469
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.03841, 16.0147]
+			},
+			"properties": {
+				"sitecode": "CNC",
+				"sitename": "Cancuen",
+				"refShort": "",
+				"point_x": 816962.4734,
+				"point_y": 1772822.854
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.70186165, 17.85423606]
+			},
+			"properties": {
+				"sitecode": "CDZ",
+				"sitename": "Candzibaantun",
+				"refShort": "Sprajc 2008",
+				"point_x": 849593.1567,
+				"point_y": 1977146.274
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.37045, 19.88696]
+			},
+			"properties": {
+				"sitecode": "CNS",
+				"sitename": "Cansacbe",
+				"refShort": "Muller 1960",
+				"point_x": 775335.2913,
+				"point_y": 2201122.66
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.918184, 20.574671]
+			},
+			"properties": {
+				"sitecode": "ACT",
+				"sitename": "Actun Ch'on",
+				"refShort": "",
+				"point_x": 821259.7519,
+				"point_y": 2278064.912
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.094553, 16.834749]
+			},
+			"properties": {
+				"sitecode": "CAB",
+				"sitename": "Caballo",
+				"refShort": "Grube 1994:100",
+				"point_x": 916318.322,
+				"point_y": 1865338.347
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.46766, 16.91677]
+			},
+			"properties": {
+				"sitecode": "SDC",
+				"sitename": "San Diego Cliff",
+				"refShort": "Ford 2004 SEDGEPLAN",
+				"point_x": 769706.0459,
+				"point_y": 1872108.109
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.937081, 20.581734]
+			},
+			"properties": {
+				"sitecode": "XCS",
+				"sitename": "X'Castillo",
+				"refShort": "Pollock 1980:325",
+				"point_x": 819249.6587,
+				"point_y": 2278834.507
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.107395, 16.740425]
+			},
+			"properties": {
+				"sitecode": "CRC",
+				"sitename": "Caracol",
+				"refShort": "",
+				"point_x": 915175.8304,
+				"point_y": 1854906.623
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.34526292, 20.17255557]
+			},
+			"properties": {
+				"sitecode": "CKM",
+				"sitename": "Chacmultun",
+				"refShort": "Kelly 1993",
+				"point_x": 882085.1292,
+				"point_y": 2234782.837
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.49914312, 17.9142188]
+			},
+			"properties": {
+				"sitecode": "CHM",
+				"sitename": "Champerico",
+				"refShort": "Sprajc 2008",
+				"point_x": 870977.1099,
+				"point_y": 1984184.321
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.81570828, 17.88080751]
+			},
+			"properties": {
+				"sitecode": "CHY",
+				"sitename": "Cheyokolnah",
+				"refShort": "Sprajc 2008",
+				"point_x": 837465.154,
+				"point_y": 1979880.004
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.493101, 18.455037]
+			},
+			"properties": {
+				"sitecode": "CHC",
+				"sitename": "Chicanna",
+				"refShort": "",
+				"point_x": 870425.0886,
+				"point_y": 2044096.784
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.57221, 20.6828]
+			},
+			"properties": {
+				"sitecode": "CHN",
+				"sitename": "Chichen Itza",
+				"refShort": "",
+				"point_x": 961487.2643,
+				"point_y": 2293349.716
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.22527, 19.87464]
+			},
+			"properties": {
+				"sitecode": "CLB",
+				"sitename": "Chilib",
+				"refShort": "Muller 1960",
+				"point_x": 790568.2682,
+				"point_y": 2200002.309
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.00565833, 17.202625]
+			},
+			"properties": {
+				"sitecode": "BKP",
+				"sitename": "Baking Pot",
+				"refShort": "Helmke 2009",
+				"point_x": 924997.1298,
+				"point_y": 1906357.069
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.07332778, 17.14509444]
+			},
+			"properties": {
+				"sitecode": "CHP",
+				"sitename": "Cahal Pech",
+				"refShort": "Kelly 1996",
+				"point_x": 917916.9093,
+				"point_y": 1899832.576
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.56284903, 17.40201721]
+			},
+			"properties": {
+				"sitecode": "CNK",
+				"sitename": "Chinikiha",
+				"refShort": "Ford 2004 NGS map",
+				"point_x": 652658.3411,
+				"point_y": 1924601.751
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.77432, 16.09255]
+			},
+			"properties": {
+				"sitecode": "CKL",
+				"sitename": "Chinkultic",
+				"refShort": "",
+				"point_x": 631085.4141,
+				"point_y": 1779561.476
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.22712365, 20.14722542]
+			},
+			"properties": {
+				"sitecode": "CNB",
+				"sitename": "Chuncanob",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 894513.3259,
+				"point_y": 2232251.85
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.22487, 17.17216]
+			},
+			"properties": {
+				"sitecode": "CNZ",
+				"sitename": "Chunhuitz",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 901710.0112,
+				"point_y": 1902511.715
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-87.678497, 20.487721]
+			},
+			"properties": {
+				"sitecode": "COB",
+				"sitename": "Coba",
+				"refShort": "",
+				"point_x": 1055507.086,
+				"point_y": 2274476.096
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-93.20184, 18.28007]
+			},
+			"properties": {
+				"sitecode": "CML",
+				"sitename": "Comalcalco",
+				"refShort": "Witschey 2009",
+				"point_x": 478666.6381,
+				"point_y": 2021183.635
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.11024, 16.23606]
+			},
+			"properties": {
+				"sitecode": "CMT",
+				"sitename": "Comitan",
+				"refShort": "Pina Chan 1967",
+				"point_x": 595087.4939,
+				"point_y": 1795253.747
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.143152, 14.834788]
+			},
+			"properties": {
+				"sitecode": "CPN",
+				"sitename": "Copan",
+				"refShort": "",
+				"point_x": 915230.9554,
+				"point_y": 1643635.048
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.31775523, 17.35967791]
+			},
+			"properties": {
+				"sitecode": "JLN",
+				"sitename": "Joloniel / Jolja",
+				"refShort": "",
+				"point_x": 572481.813,
+				"point_y": 1919473.867
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.14775073, 18.09648532]
+			},
+			"properties": {
+				"sitecode": "JNT",
+				"sitename": "Jonuta",
+				"refShort": "Berlin 1953",
+				"point_x": 590174.8495,
+				"point_y": 2001068.685
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.64861, 20.24884]
+			},
+			"properties": {
+				"sitecode": "KAB",
+				"sitename": "Kabah",
+				"refShort": "",
+				"point_x": 850171.6183,
+				"point_y": 2242565.64
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.14098, 19.66817]
+			},
+			"properties": {
+				"sitecode": "KYL",
+				"sitename": "Kayal",
+				"refShort": "Muller 1960",
+				"point_x": 799787.0101,
+				"point_y": 2177280.57
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.36737874, 16.83555518]
+			},
+			"properties": {
+				"sitecode": "KND",
+				"sitename": "Kendal",
+				"refShort": "Ashmore et al 1981 in Demarest",
+				"point_x": 993990.299,
+				"point_y": 1867156.565
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.486393, 17.954723]
+			},
+			"properties": {
+				"sitecode": "KPH",
+				"sitename": "Kichpanha",
+				"refShort": "",
+				"point_x": 978323.2325,
+				"point_y": 1991017.219
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.55337, 20.09945]
+			},
+			"properties": {
+				"sitecode": "KUC",
+				"sitename": "Kiuic",
+				"refShort": "Dunning 1992",
+				"point_x": 860475.7502,
+				"point_y": 2226215.592
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.1, 16.683]
+			},
+			"properties": {
+				"sitecode": "LAC",
+				"sitename": "Kuna Lacanha",
+				"refShort": "",
+				"point_x": 697616.8009,
+				"point_y": 1849197.234
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.429203, 16.52015]
+			},
+			"properties": {
+				"sitecode": "AML",
+				"sitename": "La Amelia",
+				"refShort": "",
+				"point_x": 774360.7334,
+				"point_y": 1828223.64
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.546949, 17.524855]
+			},
+			"properties": {
+				"sitecode": "CRN",
+				"sitename": "La Corona",
+				"refShort": "",
+				"point_x": 760366.769,
+				"point_y": 1939346.743
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.86238, 17.22369]
+			},
+			"properties": {
+				"sitecode": "FLD",
+				"sitename": "La Florida",
+				"refShort": "Rice and Puleston 1981 Fig. 6.",
+				"point_x": 727307.3235,
+				"point_y": 1905556.979
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.2812, 17.60245]
+			},
+			"properties": {
+				"sitecode": "HRZ",
+				"sitename": "La Honradez",
+				"refShort": "Mayer 2006",
+				"point_x": 894782.6901,
+				"point_y": 1950081.348
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.555443, 17.206108]
+			},
+			"properties": {
+				"sitecode": "JOY",
+				"sitename": "La Joyanca",
+				"refShort": "",
+				"point_x": 759984.9988,
+				"point_y": 1904071.588
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.29396, 17.019]
+			},
+			"properties": {
+				"sitecode": "MAR",
+				"sitename": "La Mar",
+				"refShort": "",
+				"point_x": 675538.0727,
+				"point_y": 1888061.772
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.045406, 17.862519]
+			},
+			"properties": {
+				"sitecode": "MLP",
+				"sitename": "La Milpa",
+				"refShort": "",
+				"point_x": 919167.3065,
+				"point_y": 1979441.443
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.9882476, 17.20523891]
+			},
+			"properties": {
+				"sitecode": "MTR",
+				"sitename": "La Montura",
+				"refShort": "Ford 2004 SEGEPLAN",
+				"point_x": 820352.2389,
+				"point_y": 1904751.957
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.05982, 17.005233]
+			},
+			"properties": {
+				"sitecode": "PSD",
+				"sitename": "La Pasadita",
+				"refShort": "",
+				"point_x": 706546.4953,
+				"point_y": 1881132.291
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.43328, 20.12192]
+			},
+			"properties": {
+				"sitecode": "RFM",
+				"sitename": "La Reforma",
+				"refShort": "Dunning 1992",
+				"point_x": 872994.6114,
+				"point_y": 2228970.622
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.180138, 16.787805]
+			},
+			"properties": {
+				"sitecode": "REJ",
+				"sitename": "La Rejolla",
+				"refShort": "",
+				"point_x": 907282.5075,
+				"point_y": 1860006.451
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.305381, 17.340851]
+			},
+			"properties": {
+				"sitecode": "SUF",
+				"sitename": "La Sufricaya",
+				"refShort": "",
+				"point_x": 892726.2118,
+				"point_y": 1921089.111
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.578717, 20.171183]
+			},
+			"properties": {
+				"sitecode": "LAB",
+				"sitename": "Labna",
+				"refShort": "",
+				"point_x": 857658.7697,
+				"point_y": 2234109.889
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.19373267, 17.07721524]
+			},
+			"properties": {
+				"sitecode": "LGP",
+				"sitename": "Laguna Perdita",
+				"refShort": "Adams 1981 Fig. 9.1",
+				"point_x": 798685.0887,
+				"point_y": 1890246.239
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.33417, 19.95532]
+			},
+			"properties": {
+				"sitecode": "MNG",
+				"sitename": "Managua",
+				"refShort": "Berlin 1955 aka Xkuncheil Witschey 2015",
+				"point_x": 779016.0981,
+				"point_y": 2208753.435
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.640814, 17.751031]
+			},
+			"properties": {
+				"sitecode": "LAM",
+				"sitename": "Lamanai",
+				"refShort": "",
+				"point_x": 962483.8632,
+				"point_y": 1968012.186
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.45827, 20.25252]
+			},
+			"properties": {
+				"sitecode": "LOL",
+				"sitename": "Loltun",
+				"refShort": "",
+				"point_x": 870069.532,
+				"point_y": 2243388.425
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.21100624, 17.96911658]
+			},
+			"properties": {
+				"sitecode": "ALC",
+				"sitename": "Los Alacranes",
+				"refShort": "Sprajc 2008",
+				"point_x": 901421.1053,
+				"point_y": 1990867.783
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.72052, 15.145866]
+			},
+			"properties": {
+				"sitecode": "HIG",
+				"sitename": "Los Higos",
+				"refShort": "",
+				"point_x": 960110.1568,
+				"point_y": 1678979.696
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.931412, 16.208579]
+			},
+			"properties": {
+				"sitecode": "LBT",
+				"sitename": "Lubaantun",
+				"refShort": "",
+				"point_x": 935111.7083,
+				"point_y": 1796398.854
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.87422, 16.31377]
+			},
+			"properties": {
+				"sitecode": "MQL",
+				"sitename": "Machaquila",
+				"refShort": "",
+				"point_x": 834045.729,
+				"point_y": 1806204.73
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [0, 0]
+			},
+			"properties": {
+				"sitecode": "MAD",
+				"sitename": "Madrid",
+				"refShort": "",
+				"point_x": null,
+				"point_y": null
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.00426667, 20.58899703]
+			},
+			"properties": {
+				"sitecode": "MXC",
+				"sitename": "Maxcanu",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 812295.1582,
+				"point_y": 2279534.782
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.432504, 20.730068]
+			},
+			"properties": {
+				"sitecode": "MPN",
+				"sitename": "Mayapan",
+				"refShort": "",
+				"point_x": 871594.0952,
+				"point_y": 2296431.558
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.51637, 20.29504]
+			},
+			"properties": {
+				"sitecode": "MCG",
+				"sitename": "Metate con Glifos",
+				"refShort": "Dunning 1992",
+				"point_x": 863893.5834,
+				"point_y": 2247971.372
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.25571, 17.52636]
+			},
+			"properties": {
+				"sitecode": "MRF",
+				"sitename": "Miraflores",
+				"refShort": "Pina Chan 1967",
+				"point_x": 579001.9903,
+				"point_y": 1937939.654
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.293058, 17.801641]
+			},
+			"properties": {
+				"sitecode": "MRL",
+				"sitename": "Moral-Reforma",
+				"refShort": "",
+				"point_x": 680924.4771,
+				"point_y": 1969039.505
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.921387, 17.026209]
+			},
+			"properties": {
+				"sitecode": "MTL",
+				"sitename": "Motul de San Jose",
+				"refShort": "",
+				"point_x": 827759.7517,
+				"point_y": 1885034.306
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.66429458, 20.32003374]
+			},
+			"properties": {
+				"sitecode": "MLC",
+				"sitename": "Mulchic",
+				"refShort": "Kelly 1993",
+				"point_x": 848371.9802,
+				"point_y": 2250421.248
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.02181, 17.09626]
+			},
+			"properties": {
+				"sitecode": "HUA",
+				"sitename": "Huacutal",
+				"refShort": "Ford 2004 SEDGEPLAN",
+				"point_x": 816964.7781,
+				"point_y": 1892627.141
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.795724, 16.329043]
+			},
+			"properties": {
+				"sitecode": "PMA",
+				"sitename": "El Palma",
+				"refShort": "Martos 2009",
+				"point_x": 735498.365,
+				"point_y": 1806606.924
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.9126, 20.58486]
+			},
+			"properties": {
+				"sitecode": "CHI",
+				"sitename": "Chich",
+				"refShort": "Blom et al 1940",
+				"point_x": 821866.7015,
+				"point_y": 2279255.135
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.063603, 17.019479]
+			},
+			"properties": {
+				"sitecode": "CCN",
+				"sitename": "Cuychen Cave",
+				"refShort": "Helmke et al 2012",
+				"point_x": 919232.6785,
+				"point_y": 1886029.224
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.54974, 20.22863]
+			},
+			"properties": {
+				"sitecode": "MLS",
+				"sitename": "Muluchtzekel",
+				"refShort": "Dunning 1992",
+				"point_x": 860558.2386,
+				"point_y": 2240538.698
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.631186, 17.807332]
+			},
+			"properties": {
+				"sitecode": "NCT",
+				"sitename": "Naachtun",
+				"refShort": "",
+				"point_x": 857137.7905,
+				"point_y": 1972082.762
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.2663, 16.26636]
+			},
+			"properties": {
+				"sitecode": "NTN",
+				"sitename": "Naj Tunich",
+				"refShort": "",
+				"point_x": 899180.7598,
+				"point_y": 1802045.85
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.405583, 17.180985]
+			},
+			"properties": {
+				"sitecode": "NKM",
+				"sitename": "Nakum",
+				"refShort": "",
+				"point_x": 882369.3613,
+				"point_y": 1903122.219
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.26065, 17.13839]
+			},
+			"properties": {
+				"sitecode": "NAR",
+				"sitename": "Naranjo",
+				"refShort": "",
+				"point_x": 897970.306,
+				"point_y": 1898695.319
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.824558, 16.321637]
+			},
+			"properties": {
+				"sitecode": "NMP",
+				"sitename": "Nim Li Punit",
+				"refShort": "Gallareta C 2009",
+				"point_x": 946350.4411,
+				"point_y": 1809090.084
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.3735039, 20.15795431]
+			},
+			"properties": {
+				"sitecode": "NCC",
+				"sitename": "Nohcacab II",
+				"refShort": "Blom et al 1940",
+				"point_x": 879164.9902,
+				"point_y": 2233099.695
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.56284346, 20.95713859]
+			},
+			"properties": {
+				"sitecode": "NPT",
+				"sitename": "Nohpat",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 857482.1335,
+				"point_y": 2321242.416
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.25091476, 17.94016749]
+			},
+			"properties": {
+				"sitecode": "OAG",
+				"sitename": "Ojo de Agua",
+				"refShort": "Sprajc 2008",
+				"point_x": 897252.8987,
+				"point_y": 1987573.353
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.950416, 20.575333]
+			},
+			"properties": {
+				"sitecode": "OXK",
+				"sitename": "Oxkintok",
+				"refShort": "",
+				"point_x": 817941.2283,
+				"point_y": 2278125.264
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.722727, 18.345151]
+			},
+			"properties": {
+				"sitecode": "OXP",
+				"sitename": "Oxpemul",
+				"refShort": "",
+				"point_x": 846411.9566,
+				"point_y": 2031492.995
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.048717, 17.079422]
+			},
+			"properties": {
+				"sitecode": "PBT",
+				"sitename": "Pacbitun",
+				"refShort": "",
+				"point_x": 920687.6164,
+				"point_y": 1892606.366
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.019356, 17.479682]
+			},
+			"properties": {
+				"sitecode": "PAL",
+				"sitename": "Palenque",
+				"refShort": "",
+				"point_x": 604117.9447,
+				"point_y": 1932888.745
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [0, 0]
+			},
+			"properties": {
+				"sitecode": "PAR",
+				"sitename": "Paris",
+				"refShort": "Paris Codex",
+				"point_x": null,
+				"point_y": null
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.32177721, 18.43508876]
+			},
+			"properties": {
+				"sitecode": "PCR",
+				"sitename": "Pasion del Cristo",
+				"refShort": "Ford 2004 NGS map",
+				"point_x": 888635.2301,
+				"point_y": 2042271.863
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.47447, 18.85083]
+			},
+			"properties": {
+				"sitecode": "PCL",
+				"sitename": "Pechal",
+				"refShort": "Muller 1960",
+				"point_x": 871577.848,
+				"point_y": 2088019.29
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.25938, 17.14358]
+			},
+			"properties": {
+				"sitecode": "PNG",
+				"sitename": "Piedras Negras",
+				"refShort": "",
+				"point_x": 685159.2601,
+				"point_y": 1896267.907
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.80102, 19.81505]
+			},
+			"properties": {
+				"sitecode": "PIX",
+				"sitename": "Pixoy",
+				"refShort": "Muller 1960",
+				"point_x": 835154.1538,
+				"point_y": 2194188.909
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-87.07812, 20.61854]
+			},
+			"properties": {
+				"sitecode": "PLC",
+				"sitename": "Playa del Carmen",
+				"refShort": "Witschey 2009",
+				"point_x": 1117836.951,
+				"point_y": 2291202.861
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.747552, 18.621844]
+			},
+			"properties": {
+				"sitecode": "PBX",
+				"sitename": "Pol Box",
+				"refShort": "",
+				"point_x": 948854.1377,
+				"point_y": 2064311.453
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.128591, 16.823058]
+			},
+			"properties": {
+				"sitecode": "POL",
+				"sitename": "Polol",
+				"refShort": "",
+				"point_x": 806011.3383,
+				"point_y": 1862176.619
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.22545, 20.11094]
+			},
+			"properties": {
+				"sitecode": "PMC",
+				"sitename": "Pomuch",
+				"refShort": "Muller 1960",
+				"point_x": 790115.7335,
+				"point_y": 2226174.602
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.11318, 16.119164]
+			},
+			"properties": {
+				"sitecode": "PUS",
+				"sitename": "Pusilha",
+				"refShort": "",
+				"point_x": 915880.8397,
+				"point_y": 1786062.262
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.0387, 15.26866]
+			},
+			"properties": {
+				"sitecode": "QRG",
+				"sitename": "Quirigua",
+				"refShort": "",
+				"point_x": 925627.0441,
+				"point_y": 1691920.538
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.38796, 20.03313]
+			},
+			"properties": {
+				"sitecode": "RNC",
+				"sitename": "Rancho Nohcacab",
+				"refShort": "Dunning 1992",
+				"point_x": 877952.0655,
+				"point_y": 2219232.377
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.28195, 17.78163]
+			},
+			"properties": {
+				"sitecode": "RAZ",
+				"sitename": "Rio Azul",
+				"refShort": "",
+				"point_x": 894310.8148,
+				"point_y": 1969937.235
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.776763, 16.041099]
+			},
+			"properties": {
+				"sitecode": "SCN",
+				"sitename": "Sacchana",
+				"refShort": "",
+				"point_x": 630881.6881,
+				"point_y": 1773867.68
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.37891366, 20.2563206]
+			},
+			"properties": {
+				"sitecode": "SNT",
+				"sitename": "Sacnicte",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 878360.4807,
+				"point_y": 2243989.488
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.304709, 16.559655]
+			},
+			"properties": {
+				"sitecode": "SCU",
+				"sitename": "Sacul",
+				"refShort": "",
+				"point_x": 894475.4463,
+				"point_y": 1834521.735
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.403889, 17.548333]
+			},
+			"properties": {
+				"sitecode": "SBO",
+				"sitename": "San Bartolo",
+				"refShort": "",
+				"point_x": 881857.6893,
+				"point_y": 1943832.578
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.5987, 20.29654]
+			},
+			"properties": {
+				"sitecode": "SDB",
+				"sitename": "San Diego Becanchen",
+				"refShort": "Dunning 1992",
+				"point_x": 855282.2948,
+				"point_y": 2247957.985
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.11333544, 20.70189486]
+			},
+			"properties": {
+				"sitecode": "SBR",
+				"sitename": "Santa Barbara",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 800695.3241,
+				"point_y": 2291835.411
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.97303, 20.20572]
+			},
+			"properties": {
+				"sitecode": "TZC",
+				"sitename": "Tzocchen",
+				"refShort": "Dunning 1992",
+				"point_x": 816336.3235,
+				"point_y": 2237134.564
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.82075, 19.96948333]
+			},
+			"properties": {
+				"sitecode": "TZM",
+				"sitename": "Tzum",
+				"refShort": "Mayer 2009",
+				"point_x": 832762.0386,
+				"point_y": 2211259.591
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.63775, 17.39795]
+			},
+			"properties": {
+				"sitecode": "UAX",
+				"sitename": "Uaxactun",
+				"refShort": "",
+				"point_x": 857294.4331,
+				"point_y": 1926716.308
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.31945923, 20.71472362]
+			},
+			"properties": {
+				"sitecode": "UAY",
+				"sitename": "Uayma",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 987770.8846,
+				"point_y": 2297633.929
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.46222, 20.38265]
+			},
+			"properties": {
+				"sitecode": "UYM",
+				"sitename": "Uaymil",
+				"refShort": "Muller 1960",
+				"point_x": 764883.7396,
+				"point_y": 2255870.338
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.367222, 16.820278]
+			},
+			"properties": {
+				"sitecode": "UCN",
+				"sitename": "Ucanal",
+				"refShort": "",
+				"point_x": 887268.8035,
+				"point_y": 1863229.52
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.31081686, 20.50287903]
+			},
+			"properties": {
+				"sitecode": "UKM",
+				"sitename": "Ukum",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 884869.6131,
+				"point_y": 2271475.535
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.54987, 17.180117]
+			},
+			"properties": {
+				"sitecode": "UOL",
+				"sitename": "Uolantun",
+				"refShort": "",
+				"point_x": 867032.7166,
+				"point_y": 1902717.617
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.06870886, 16.24020598]
+			},
+			"properties": {
+				"sitecode": "UXB",
+				"sitename": "Uxbenka",
+				"refShort": "Kelly 1996",
+				"point_x": 920389.0228,
+				"point_y": 1799543.896
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.77, 20.361167]
+			},
+			"properties": {
+				"sitecode": "UXM",
+				"sitename": "Uxmal",
+				"refShort": "",
+				"point_x": 837233.9062,
+				"point_y": 2254758.641
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.966617, 17.874986]
+			},
+			"properties": {
+				"sitecode": "UXL",
+				"sitename": "Uxul",
+				"refShort": "",
+				"point_x": 821446.0077,
+				"point_y": 1978992.643
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.90959275, 20.52755061]
+			},
+			"properties": {
+				"sitecode": "XBU",
+				"sitename": "Xburrotunich",
+				"refShort": "",
+				"point_x": 822300.8095,
+				"point_y": 2272911.825
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.010233, 20.171083]
+			},
+			"properties": {
+				"sitecode": "XLM",
+				"sitename": "Xcalumkin",
+				"refShort": "",
+				"point_x": 812514.7925,
+				"point_y": 2233226.959
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.148122, 19.990267]
+			},
+			"properties": {
+				"sitecode": "XCA",
+				"sitename": "Xcocha",
+				"refShort": "",
+				"point_x": 798364.1201,
+				"point_y": 2212968.405
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.67555, 20.18503333]
+			},
+			"properties": {
+				"sitecode": "XCK",
+				"sitename": "Xcochkax",
+				"refShort": "Mayer 2009",
+				"point_x": 847496.2763,
+				"point_y": 2235438.635
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.82738333, 20.19195]
+			},
+			"properties": {
+				"sitecode": "XCL",
+				"sitename": "Xculoc",
+				"refShort": "Mayer 2009",
+				"point_x": 831598.1201,
+				"point_y": 2235893.872
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.52515426, 19.88854643]
+			},
+			"properties": {
+				"sitecode": "XKM",
+				"sitename": "Xkichmook",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 863914.8033,
+				"point_y": 2202905.267
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.06603, 20.16472]
+			},
+			"properties": {
+				"sitecode": "XKB",
+				"sitename": "Xkombec",
+				"refShort": "Witschey 2009",
+				"point_x": 806690.9745,
+				"point_y": 2232417.942
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.88435413, 16.37527104]
+			},
+			"properties": {
+				"sitecode": "XNH",
+				"sitename": "Xnaheb",
+				"refShort": "Ford 2004 NGS map",
+				"point_x": 939828.4676,
+				"point_y": 1814905.568
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.371992, 17.491413]
+			},
+			"properties": {
+				"sitecode": "XUL",
+				"sitename": "Xultun",
+				"refShort": "",
+				"point_x": 882860.4463,
+				"point_y": 1937976.365
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.141127, 17.087695]
+			},
+			"properties": {
+				"sitecode": "XUN",
+				"sitename": "Xunantunich",
+				"refShort": "",
+				"point_x": 910818.1542,
+				"point_y": 1893325.755
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.53725, 16.18167]
+			},
+			"properties": {
+				"sitecode": "XTL",
+				"sitename": "Xutilha",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 870340.2003,
+				"point_y": 1792152.365
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.253495, 16.849378]
+			},
+			"properties": {
+				"sitecode": "YTM",
+				"sitename": "Yaleltsemen",
+				"refShort": "",
+				"point_x": 579477.8802,
+				"point_y": 1863042.64
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.37645, 16.85435]
+			},
+			"properties": {
+				"sitecode": "YLT",
+				"sitename": "Yaltutu",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 886214.7273,
+				"point_y": 1866986.952
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.71244, 20.12326]
+			},
+			"properties": {
+				"sitecode": "YXL",
+				"sitename": "Yaxche Xlabpak",
+				"refShort": "Dunning 1992",
+				"point_x": 843772.4594,
+				"point_y": 2228517.108
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.9675, 16.896167]
+			},
+			"properties": {
+				"sitecode": "YAX",
+				"sitename": "Yaxchilan",
+				"refShort": "",
+				"point_x": 716502.6519,
+				"point_y": 1869184.945
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.70345385, 20.75814043]
+			},
+			"properties": {
+				"sitecode": "YXP",
+				"sitename": "Yaxcopoil",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 843297.7927,
+				"point_y": 2298883.71
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.398233, 17.072733]
+			},
+			"properties": {
+				"sitecode": "YXH",
+				"sitename": "Yaxha",
+				"refShort": "",
+				"point_x": 883445.9675,
+				"point_y": 1891142.89
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [89.584, 18.717331]
+			},
+			"properties": {
+				"sitecode": "CHT",
+				"sitename": "Chactun",
+				"refShort": "Sprajc 2015",
+				"point_x": 860307.0312,
+				"point_y": 2073000.849
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [89.270833, 17.306167]
+			},
+			"properties": {
+				"sitecode": "HLM",
+				"sitename": "Holmul",
+				"refShort": "Mayer 2006",
+				"point_x": 896526.4537,
+				"point_y": 1917267.865
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.48587, 20.2431]
+			},
+			"properties": {
+				"sitecode": "YXM",
+				"sitename": "Yaxhom",
+				"refShort": "Dunning 1992",
+				"point_x": 867205.0602,
+				"point_y": 2242282.87
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.53778537, 19.92771529]
+			},
+			"properties": {
+				"sitecode": "YOK",
+				"sitename": "Yo'okop",
+				"refShort": "Ford 2004 NGS map",
+				"point_x": 967348.8503,
+				"point_y": 2209693.846
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.57000934, 20.61686136]
+			},
+			"properties": {
+				"sitecode": "YUL",
+				"sitename": "Yula",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 961916.8024,
+				"point_y": 2286042.168
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.935308, 17.080642]
+			},
+			"properties": {
+				"sitecode": "ATE",
+				"sitename": "Acte",
+				"refShort": "Ford 2004 SEDGEPLAN",
+				"point_x": 826205.463,
+				"point_y": 1891040.256
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.648906, 18.5316]
+			},
+			"properties": {
+				"sitecode": "ALV",
+				"sitename": "Alvaro Obregon Cave",
+				"refShort": "Blom et al. 1940",
+				"point_x": 537055.0034,
+				"point_y": 2049037.411
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.97675, 20.24525]
+			},
+			"properties": {
+				"sitecode": "CTN",
+				"sitename": "Cap'eldzibtunichna",
+				"refShort": "Williams-Beck 1998",
+				"point_x": 815867.3247,
+				"point_y": 2241506.634
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.722139, 17.320281]
+			},
+			"properties": {
+				"sitecode": "CCA",
+				"sitename": "Chancala",
+				"refShort": "Pina Chan 1967",
+				"point_x": 635795.8469,
+				"point_y": 1915437.514
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.929931, 21.281431]
+			},
+			"properties": {
+				"sitecode": "DZL",
+				"sitename": "Dzilam Gonzalez",
+				"refShort": "Covarrubius Villanueva  2008",
+				"point_x": 922462.9892,
+				"point_y": 2358747.281
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.801631, 15.092542]
+			},
+			"properties": {
+				"sitecode": "ABR",
+				"sitename": "El Abra",
+				"refShort": "Canuto 2004 Nakamura 1991 Blom et al. 1940",
+				"point_x": 951513.0778,
+				"point_y": 1672874.453
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.571047, 16.672911]
+			},
+			"properties": {
+				"sitecode": "PAT",
+				"sitename": "El Pato",
+				"refShort": "Ford 2004 SEDGEPLAN",
+				"point_x": 759055.1507,
+				"point_y": 1844947.523
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.044372, 16.771156]
+			},
+			"properties": {
+				"sitecode": "MCW",
+				"sitename": "Mountain Cow",
+				"refShort": "Blom et al 1940",
+				"point_x": 921838.722,
+				"point_y": 1858445.955
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.166531, 16.915581]
+			},
+			"properties": {
+				"sitecode": "ITS",
+				"sitename": "Itzimte-Peten",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 801841.2642,
+				"point_y": 1872389.053
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.07508056, 17.29113889]
+			},
+			"properties": {
+				"sitecode": "JUL",
+				"sitename": "El Juleque",
+				"refShort": "Ford SEDGEPLAN 2004",
+				"point_x": 810965.1507,
+				"point_y": 1914123.385
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.470667, 17.016167]
+			},
+			"properties": {
+				"sitecode": "NAY",
+				"sitename": "La Naya",
+				"refShort": "",
+				"point_x": 875839.7704,
+				"point_y": 1884734.046
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.448819, 17.130211]
+			},
+			"properties": {
+				"sitecode": "PJR",
+				"sitename": "Pajaral",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 771442.3332,
+				"point_y": 1895740.56
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.552742, 17.483889]
+			},
+			"properties": {
+				"sitecode": "PMT",
+				"sitename": "Pomona-Tabasco",
+				"refShort": "Ford 2004 NGS Map",
+				"point_x": 653663.5498,
+				"point_y": 1933669.675
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.793969, 18.770839]
+			},
+			"properties": {
+				"sitecode": "RSB",
+				"sitename": "Resbalon",
+				"refShort": "Carrasco and Boucher 1987",
+				"point_x": 943604.838,
+				"point_y": 2080717.65
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.617333, 20.105633]
+			},
+			"properties": {
+				"sitecode": "SBP",
+				"sitename": "Sabana Piletas",
+				"refShort": "Merk 2008",
+				"point_x": 853766.0036,
+				"point_y": 2226763.467
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.976531, 20.239061]
+			},
+			"properties": {
+				"sitecode": "SPD",
+				"sitename": "San Pedro Dzitbalche",
+				"refShort": "Pollock 1980",
+				"point_x": 815902.7979,
+				"point_y": 2240821.441
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.800419, 16.558031]
+			},
+			"properties": {
+				"sitecode": "SEP",
+				"sitename": "Santa Elena Poco Uinic",
+				"refShort": "Pina Chan 1967",
+				"point_x": 627990.6237,
+				"point_y": 1831045.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.395094, 18.402319]
+			},
+			"properties": {
+				"sitecode": "SRC",
+				"sitename": "Santa Rita Belize",
+				"refShort": "Stuart 2005",
+				"point_x": 986792.4676,
+				"point_y": 2040882.448
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.888819, 20.221919]
+			},
+			"properties": {
+				"sitecode": "SIS",
+				"sitename": "Sisilha",
+				"refShort": "Williams-Beck 1998",
+				"point_x": 825109.6641,
+				"point_y": 2239092.364
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.90035, 16.939869]
+			},
+			"properties": {
+				"sitecode": "FLS",
+				"sitename": "Flores",
+				"refShort": "1991 IGM IAH GT Map",
+				"point_x": 830176.4416,
+				"point_y": 1875507.179
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.490539, 17.361931]
+			},
+			"properties": {
+				"sitecode": "TLA",
+				"sitename": "Tila",
+				"refShort": "Pina Chan 1967",
+				"point_x": 554124.1148,
+				"point_y": 1919666.121
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.875, 19.775886]
+			},
+			"properties": {
+				"sitecode": "TCK",
+				"sitename": "Tohcok",
+				"refShort": "Mayer 1983 Grana-Behrens 2002",
+				"point_x": 827477.5285,
+				"point_y": 2189704.865
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.533069, 17.3002]
+			},
+			"properties": {
+				"sitecode": "TRC",
+				"sitename": "Tres Cabezas",
+				"refShort": "",
+				"point_x": 868625.189,
+				"point_y": 1916084.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.078244, 20.214392]
+			},
+			"properties": {
+				"sitecode": "XCR",
+				"sitename": "Xcoralche",
+				"refShort": "Muller 1960",
+				"point_x": 805316.4116,
+				"point_y": 2237897.686
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.681011, 20.297111]
+			},
+			"properties": {
+				"sitecode": "XNC",
+				"sitename": "Xnucbec",
+				"refShort": "Dunning 1992",
+				"point_x": 846675.7794,
+				"point_y": 2247846.008
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.535833, 19.981111]
+			},
+			"properties": {
+				"sitecode": "XTB",
+				"sitename": "Xtablakal",
+				"refShort": "Mayer 2013",
+				"point_x": 862583.6301,
+				"point_y": 2213139.79
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.931739, 17.392369]
+			},
+			"properties": {
+				"sitecode": "XUP",
+				"sitename": "Xupa",
+				"refShort": "Pina Chan 1967",
+				"point_x": 613475.3407,
+				"point_y": 1923277.976
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.497369, 20.184239]
+			},
+			"properties": {
+				"sitecode": "YKL",
+				"sitename": "Yakalxiu",
+				"refShort": "Dunning 1992",
+				"point_x": 866140.2487,
+				"point_y": 2235734.289
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.48293, 18.59089]
+			},
+			"properties": {
+				"sitecode": "LAG",
+				"sitename": "La Lagunita",
+				"refShort": "Muller 1960; Mayer personal communication",
+				"point_x": 871253.5234,
+				"point_y": 2059197.26
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.266695, 16.060978]
+			},
+			"properties": {
+				"sitecode": "CNJ",
+				"sitename": "Chinaja",
+				"refShort": "Dillon nd",
+				"point_x": 792546.6455,
+				"point_y": 1777771.681
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-93.52067, 17.17714]
+			},
+			"properties": {
+				"sitecode": "LPM",
+				"sitename": "Lopez Mateos",
+				"refShort": "Weber 1972 Navarette 1959",
+				"point_x": 444629.8952,
+				"point_y": 1899225.618
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.293595, 15.481593]
+			},
+			"properties": {
+				"sitecode": "HNY",
+				"sitename": "Hun Nal Ye Cave",
+				"refShort": "Skidmore 2006",
+				"point_x": 790390.5577,
+				"point_y": 1713425.142
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.39475, 16.50856667]
+			},
+			"properties": {
+				"sitecode": "IXT",
+				"sitename": "Ixtonton",
+				"refShort": "Mayer 2006",
+				"point_x": 884955.0459,
+				"point_y": 1828636.348
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.829888, 17.135215]
+			},
+			"properties": {
+				"sitecode": "TPN",
+				"sitename": "Tipan",
+				"refShort": "Andres et al 2014",
+				"point_x": 943824.3523,
+				"point_y": 1899277.22
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-91.134225, 16.494857]
+			},
+			"properties": {
+				"sitecode": "OXL",
+				"sitename": "Oxlahuntun",
+				"refShort": "Healey 1948 Bourne 2001",
+				"point_x": 699153.1968,
+				"point_y": 1824595.873
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [89.547517, 18.382464]
+			},
+			"properties": {
+				"sitecode": "SLM",
+				"sitename": "San Lorenzo",
+				"refShort": "Mayer 2003",
+				"point_x": 864870.9859,
+				"point_y": 2035970.448
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [89.660853, 16.987772]
+			},
+			"properties": {
+				"sitecode": "ZPT",
+				"sitename": "Zacpeten",
+				"refShort": "Ford 2004 NGS Map",
+				"point_x": 855620.7472,
+				"point_y": 1881232.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.5005419, 20.2976699]
+			},
+			"properties": {
+				"sitecode": "SRB",
+				"sitename": "Santa Rita Becanchen",
+				"refShort": "Pollock 1980",
+				"point_x": 865542.3443,
+				"point_y": 2248297.846
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.59876667, 19.77256667]
+			},
+			"properties": {
+				"sitecode": "SRX",
+				"sitename": "Santa Rosa Xtampak",
+				"refShort": "Mayer 2006",
+				"point_x": 856457.5299,
+				"point_y": 2189895.939
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-87.59915, 20.19192]
+			},
+			"properties": {
+				"sitecode": "SDM",
+				"sitename": "Santo Domingo",
+				"refShort": "Dunning 1992",
+				"point_x": 1064910.925,
+				"point_y": 2241928.538
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.649115, 20.188271]
+			},
+			"properties": {
+				"sitecode": "SAY",
+				"sitename": "Sayil",
+				"refShort": "",
+				"point_x": 850253.6281,
+				"point_y": 2235902.601
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.08511, 16.53175]
+			},
+			"properties": {
+				"sitecode": "SBL",
+				"sitename": "Seibal",
+				"refShort": "",
+				"point_x": 814028.377,
+				"point_y": 1828807.615
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.5441011, 20.2937326]
+			},
+			"properties": {
+				"sitecode": "TBI",
+				"sitename": "Tabi",
+				"refShort": "Garza and Kurjack 1980",
+				"point_x": 860997.1801,
+				"point_y": 2247765.51
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.231028, 16.447239]
+			},
+			"properties": {
+				"sitecode": "TAM",
+				"sitename": "Tamarindito",
+				"refShort": "",
+				"point_x": 795661.394,
+				"point_y": 1820480.74
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.39851, 19.190915]
+			},
+			"properties": {
+				"sitecode": "TNH",
+				"sitename": "Tanholna",
+				"refShort": "Andrews George 1977",
+				"point_x": 878818.9362,
+				"point_y": 2125869.296
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.91695989, 20.96170044]
+			},
+			"properties": {
+				"sitecode": "TCH",
+				"sitename": "Tecoh",
+				"refShort": "Covarrubias Villanueva 2008",
+				"point_x": 924722.9742,
+				"point_y": 2323329.194
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.63163, 17.21732]
+			},
+			"properties": {
+				"sitecode": "TIK",
+				"sitename": "Tikal",
+				"refShort": "",
+				"point_x": 858295.8116,
+				"point_y": 1906716.314
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-89.416186, 17.059518]
+			},
+			"properties": {
+				"sitecode": "TPX",
+				"sitename": "Topoxte",
+				"refShort": "",
+				"point_x": 881511.4491,
+				"point_y": 1889667.149
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-92.457831, 17.632273]
+			},
+			"properties": {
+				"sitecode": "TRT",
+				"sitename": "Tortuguero",
+				"refShort": "",
+				"point_x": 557513.9413,
+				"point_y": 1949584.836
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.04851, 16.195903]
+			},
+			"properties": {
+				"sitecode": "TRS",
+				"sitename": "Tres Islas",
+				"refShort": "",
+				"point_x": 815594.0559,
+				"point_y": 1792849.279
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-90.21619, 20.6925]
+			},
+			"properties": {
+				"sitecode": "TUN",
+				"sitename": "Tunkuyi",
+				"refShort": "Hixson 2005",
+				"point_x": 789992.666,
+				"point_y": 2290607.075
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-88.81955165, 16.41565857]
+			},
+			"properties": {
+				"sitecode": "TZN",
+				"sitename": "Tzimin Che",
+				"refShort": "Wanyerka 2003",
+				"point_x": 946671.6935,
+				"point_y": 1819525.071
+			}
+		}
+	]
+}
