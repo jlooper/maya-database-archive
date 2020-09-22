@@ -55,12 +55,13 @@ export default {
         //Add the polygon and line the symbol layer to the map.
         self.map.layers.add(symbolLayer);
         var popupTemplate =
-          '<div class="customInfobox"><div class="name">{sitecode}<br/>{sitename}</div>{refShort}</div>';
+          '<div style="padding:10px;color:white;font-size:11pt;font-weight:bold">{sitecode}<br/>{sitename}</div>';
 
         //Create a popup but leave it closed so we can update it and display it later.
         let popup = new atlas.Popup({
           pixelOffset: [0, -18],
-          closeButton: false,
+          closeButton: true,
+          fillColor: "rgba(0,0,0,0.8)",
         });
 
         //Add a hover event to the symbol layer.
@@ -111,11 +112,6 @@ export default {
 #myMap {
   height: 75vh;
   width: 100vw;
-}
-
-.name {
-  padding: 3px;
-  margin: 5px;
 }
 </style>
 
