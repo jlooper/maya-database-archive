@@ -225,7 +225,11 @@
               :visible="columnsVisible['SiteCodeDestination'].display"
               width="40"
               sortable
-            >{{ props.row.SiteCodeDestination }}</b-table-column>
+            >
+              <router-link
+                :to="'map/'+props.row.SiteCodeDestination+''"
+              >{{ props.row.SiteCodeDestination }}</router-link>
+            </b-table-column>
             <b-table-column
               field="MayanArtist"
               :label="columnsVisible['MayanArtist'].title"
@@ -301,23 +305,23 @@ import * as odata from "odata-client";
 export default {
   validations: {
     search_field_1: {
-      required
+      required,
     },
     search_option_1: {
-      required
+      required,
     },
     search_option_2: {
-      required
-    }
+      required,
+    },
   },
   computed: {
     cols() {
       var keys = Object.keys(this.columnsVisible);
       return keys;
-    }
+    },
   },
 
-  data: function() {
+  data: function () {
     return {
       submitStatus: null,
       isLoading: false,
@@ -360,8 +364,8 @@ export default {
         Cycle365: { title: "Cycle365", display: true },
         HellmuthNum: { title: "HellmuthNum", display: true },
         MSNum: { title: "MSNum", display: true },
-        Surface: { title: "Surface", display: true }
-      }
+        Surface: { title: "Surface", display: true },
+      },
     };
   },
 
@@ -401,7 +405,7 @@ export default {
           var q = odata({
             format: "json",
             service: "https://mayan-glyphs.azurewebsites.net/odata/",
-            resources: "Artifacts"
+            resources: "Artifacts",
           });
 
           if (option3 == null) {
@@ -409,7 +413,7 @@ export default {
               //.top(30)
               .filter(option1, option2, field1)
               .get()
-              .then(function(response) {
+              .then(function (response) {
                 let data = JSON.parse(response.body);
                 return data.value;
               });
@@ -419,7 +423,7 @@ export default {
               .filter(option1, option2, field1)
               .and(option3, option4, field2)
               .get()
-              .then(function(response) {
+              .then(function (response) {
                 let data = JSON.parse(response.body);
                 return data.value;
               });
@@ -431,8 +435,8 @@ export default {
           this.validClass = "input";
         }, 500);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

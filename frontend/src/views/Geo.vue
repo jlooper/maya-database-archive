@@ -13,12 +13,14 @@ export default {
   name: "app",
   data: () => ({
     map: null,
+    zoom: 5,
+    center: [-90.128591, 16.823058],
   }),
   methods: {
     async initMap() {
       this.map = new atlas.Map("myMap", {
-        center: [-90.128591, 16.823058],
-        zoom: 5,
+        center: this.center,
+        zoom: this.zoom,
         view: "Auto",
         authOptions: {
           authType: "subscriptionKey",
@@ -90,6 +92,17 @@ export default {
   },
   mounted() {
     this.initMap();
+  },
+  created() {
+    if (this.$route.params.site) {
+      //zoom in to a particular site if one is specified
+      for (var i = 0; i < data.features.length; i++) {
+        if (data.features[i].properties.sitecode == this.$route.params.site) {
+          this.center = data.features[i].geometry.coordinates;
+          this.zoom = 12;
+        }
+      }
+    }
   },
 };
 </script>

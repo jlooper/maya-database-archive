@@ -37,6 +37,11 @@ const router = new Router({
 			name: 'map',
 			component: Geo,
 		},
+		{
+			path: '/map/:site',
+			name: 'mapsite',
+			component: Geo,
+		},
 
 		{
 			path: '/about',
