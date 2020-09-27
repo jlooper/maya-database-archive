@@ -77,8 +77,7 @@ namespace MayanGlyphsApi.Controllers
             };
         }
 
-        private IEnumerable<ResourceLink> CreateLinksForArtifacts(
-           ArtifactResourceQueryParameters artifactParameters,
+        private IEnumerable<ResourceLink> CreateLinksForArtifacts(ArtifactResourceQueryParameters artifactParameters,
            bool hasNext, bool hasPrevious)
         {
             var links = new List<ResourceLink>
