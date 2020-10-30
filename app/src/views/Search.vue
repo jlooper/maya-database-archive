@@ -9,7 +9,10 @@
           <div class="control">
             <div class="select">
               <div class="select">
-                <select :class="validClass" v-model.trim="$v.search_option_1.$model">
+                <select
+                  :class="validClass"
+                  v-model.trim="$v.search_option_1.$model"
+                >
                   <option value>Select</option>
                   <option v-for="c in cols" v-bind:key="c">{{ c }}</option>
                 </select>
@@ -31,7 +34,11 @@
             </div>
           </div>
           <p class="control is-expanded">
-            <input :class="validClass" v-model.trim="$v.search_field_1.$model" type="text" />
+            <input
+              :class="validClass"
+              v-model.trim="$v.search_field_1.$model"
+              type="text"
+            />
           </p>
         </div>
 
@@ -47,7 +54,11 @@
           </div>
           <div class="control">
             <div class="select">
-              <select class="input" name="search_option_4" v-model="search_option_4">
+              <select
+                class="input"
+                name="search_option_4"
+                v-model="search_option_4"
+              >
                 <option value>Select</option>
                 <option value="eq">=</option>
                 <option value="like">Like</option>
@@ -67,7 +78,9 @@
               type="submit"
               :disabled="submitStatus === 'PENDING'"
               class="button is-link"
-            >Search</button>
+            >
+              Search
+            </button>
           </div>
         </div>
         <div v-if="submitStatus == 'ERROR'">
@@ -76,7 +89,7 @@
       </form>
     </div>
 
-    <section v-if="artifacts.length > 0" style="overflow-x: scroll;">
+    <section v-if="artifacts.length > 0" style="overflow-x: scroll">
       <b-field grouped group-multiline>
         <b-select size="is-small" v-model="defaultSortDirection">
           <option value="asc">Default sort direction: ASC</option>
@@ -90,7 +103,9 @@
         </b-select>
 
         <div class="control is-flex">
-          <b-switch size="is-small" type="is-warning" v-model="isPaginated">Paginated</b-switch>
+          <b-switch size="is-small" type="is-warning" v-model="isPaginated"
+            >Paginated</b-switch
+          >
         </div>
         <div class="control is-flex">
           <b-switch
@@ -98,13 +113,23 @@
             type="is-warning"
             v-model="isPaginationSimple"
             :disabled="!isPaginated"
-          >Simple pagination</b-switch>
+            >Simple pagination</b-switch
+          >
         </div>
       </b-field>
 
       <b-field grouped group-multiline>
-        <div v-for="(column, index) in columnsVisible" :key="index" class="control">
-          <b-checkbox size="is-small" type="is-light" v-model="column.display">{{ column.title }}</b-checkbox>
+        <div
+          v-for="(column, index) in columnsVisible"
+          :key="index"
+          class="control"
+        >
+          <b-checkbox
+            size="is-small"
+            type="is-light"
+            v-model="column.display"
+            >{{ column.title }}</b-checkbox
+          >
         </div>
       </b-field>
       <div class="wrapper">
@@ -133,7 +158,8 @@
               width="40"
               sortable
               numeric
-            >{{ props.row.Almanpgs }}</b-table-column>
+              >{{ props.row.Almanpgs }}</b-table-column
+            >
             <b-table-column
               field="BImage1"
               :label="columnsVisible['BImage1'].title"
@@ -168,21 +194,24 @@
               :label="columnsVisible['Class'].title"
               :visible="columnsVisible['Class'].display"
               sortable
-            >{{ props.row.Class }}</b-table-column>
+              >{{ props.row.Class }}</b-table-column
+            >
 
             <b-table-column
               field="Material"
               :label="columnsVisible['Material'].title"
               :visible="columnsVisible['Material'].display"
               sortable
-            >{{ props.row.Material }}</b-table-column>
+              >{{ props.row.Material }}</b-table-column
+            >
 
             <b-table-column
               field="Technique"
               :label="columnsVisible['Technique'].title"
               :visible="columnsVisible['Technique'].display"
               sortable
-            >{{ props.row.Technique }}</b-table-column>
+              >{{ props.row.Technique }}</b-table-column
+            >
 
             <b-table-column
               field="RegionOrigin"
@@ -190,35 +219,40 @@
               :visible="columnsVisible['RegionOrigin'].display"
               width="40"
               sortable
-            >{{ props.row.RegionOrigin }}</b-table-column>
+              >{{ props.row.RegionOrigin }}</b-table-column
+            >
             <b-table-column
               field="RegionDestination"
               :label="columnsVisible['RegionDestination'].title"
               :visible="columnsVisible['RegionDestination'].display"
               width="40"
               sortable
-            >{{ props.row.RegionDestination }}</b-table-column>
+              >{{ props.row.RegionDestination }}</b-table-column
+            >
             <b-table-column
               field="BlockSort"
               :label="columnsVisible['BlockSort'].title"
               :visible="columnsVisible['BlockSort'].display"
               width="40"
               sortable
-            >{{ props.row.BlockSort }}</b-table-column>
+              >{{ props.row.BlockSort }}</b-table-column
+            >
             <b-table-column
               field="Jabbr1"
               :label="columnsVisible['Jabbr1'].title"
               :visible="columnsVisible['Jabbr1'].display"
               width="40"
               sortable
-            >{{ props.row.Jabbr1 }}</b-table-column>
+              >{{ props.row.Jabbr1 }}</b-table-column
+            >
             <b-table-column
               field="SiteOrigin"
               :label="columnsVisible['SiteOrigin'].title"
               :visible="columnsVisible['SiteOrigin'].display"
               width="40"
               sortable
-            >{{ props.row.SiteOrigin }}</b-table-column>
+              >{{ props.row.SiteOrigin }}</b-table-column
+            >
             <b-table-column
               field="SiteCodeDestination"
               :label="columnsVisible['SiteCodeDestination'].title"
@@ -226,9 +260,9 @@
               width="40"
               sortable
             >
-              <router-link
-                :to="'map/'+props.row.SiteCodeDestination+''"
-              >{{ props.row.SiteCodeDestination }}</router-link>
+              <router-link :to="'map/' + props.row.SiteCodeDestination + ''">{{
+                props.row.SiteCodeDestination
+              }}</router-link>
             </b-table-column>
             <b-table-column
               field="MayanArtist"
@@ -236,56 +270,64 @@
               :visible="columnsVisible['MayanArtist'].display"
               width="40"
               sortable
-            >{{ props.row.MayanArtist }}</b-table-column>
+              >{{ props.row.MayanArtist }}</b-table-column
+            >
             <b-table-column
               field="Cal"
               :label="columnsVisible['Cal'].title"
               :visible="columnsVisible['Cal'].display"
               width="40"
               sortable
-            >{{ props.row.Cal }}</b-table-column>
+              >{{ props.row.Cal }}</b-table-column
+            >
             <b-table-column
               field="LC"
               :label="columnsVisible['LC'].title"
               :visible="columnsVisible['LC'].display"
               width="40"
               sortable
-            >{{ props.row.LC }}</b-table-column>
+              >{{ props.row.LC }}</b-table-column
+            >
             <b-table-column
               field="Cycle260"
               :label="columnsVisible['Cycle260'].title"
               :visible="columnsVisible['Cycle260'].display"
               width="40"
               sortable
-            >{{ props.row.Cycle260 }}</b-table-column>
+              >{{ props.row.Cycle260 }}</b-table-column
+            >
             <b-table-column
               field="Cycle365"
               :label="columnsVisible['Cycle365'].title"
               :visible="columnsVisible['Cycle365'].display"
               width="40"
               sortable
-            >{{ props.row.Cycle365 }}</b-table-column>
+              >{{ props.row.Cycle365 }}</b-table-column
+            >
             <b-table-column
               field="HellmuthNum"
               :label="columnsVisible['HellmuthNum'].title"
               :visible="columnsVisible['HellmuthNum'].display"
               width="40"
               sortable
-            >{{ props.row.HellmuthNum }}</b-table-column>
+              >{{ props.row.HellmuthNum }}</b-table-column
+            >
             <b-table-column
               field="MSNum"
               :label="columnsVisible['MSNum'].title"
               :visible="columnsVisible['MSNum'].display"
               width="40"
               sortable
-            >{{ props.row.MSNum }}</b-table-column>
+              >{{ props.row.MSNum }}</b-table-column
+            >
             <b-table-column
               field="Surface"
               :label="columnsVisible['Surface'].title"
               :visible="columnsVisible['Surface'].display"
               width="40"
               sortable
-            >{{ props.row.Surface }}</b-table-column>
+              >{{ props.row.Surface }}</b-table-column
+            >
           </template>
         </b-table>
       </div>
@@ -300,8 +342,7 @@
 
 <script>
 import { required } from "vuelidate/lib/validators";
-import * as odata from "odata-client";
-
+import axios from "axios";
 export default {
   validations: {
     search_field_1: {
@@ -378,6 +419,17 @@ export default {
       );
     },
     submit() {
+      axios
+        .get("/api/artifacts")
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+
+    /*submit() {
       this.isLoading = true;
       this.message = "";
       this.artifacts = [];
@@ -435,7 +487,7 @@ export default {
           this.validClass = "input";
         }, 500);
       }
-    },
+    },*/
   },
 };
 </script>

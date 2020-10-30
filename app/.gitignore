@@ -1,5 +1,5 @@
 node_modules
-frontend/dist
+app/dist
 
 # local env files
 .env.local
