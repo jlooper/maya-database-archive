@@ -19,20 +19,7 @@
               </div>
             </div>
           </div>
-          <div class="control">
-            <div class="select">
-              <select
-                :class="validClass"
-                name="search_option_2"
-                v-model.trim="$v.search_option_2.$model"
-              >
-                <option value>Select</option>
-                <option value="eq">=</option>
-                <option value="like">Like</option>
-                <option value="contains">contains</option>
-              </select>
-            </div>
-          </div>
+          <div class="field and">=</div>
           <p class="control is-expanded">
             <input
               :class="validClass"
@@ -46,26 +33,13 @@
           <p class="and">and</p>
           <div class="control">
             <div class="select">
-              <select v-model="search_option_3">
+              <select v-model="search_option_2">
                 <option value>Select</option>
                 <option v-for="c in cols" v-bind:key="c">{{ c }}</option>
               </select>
             </div>
           </div>
-          <div class="control">
-            <div class="select">
-              <select
-                class="input"
-                name="search_option_4"
-                v-model="search_option_4"
-              >
-                <option value>Select</option>
-                <option value="eq">=</option>
-                <option value="like">Like</option>
-                <option value="contains">contains</option>
-              </select>
-            </div>
-          </div>
+          <div class="field and">=</div>
           <p class="control is-expanded">
             <input class="input" v-model="search_field_2" type="text" />
           </p>
@@ -351,9 +325,6 @@ export default {
     search_option_1: {
       required,
     },
-    search_option_2: {
-      required,
-    },
   },
   computed: {
     cols() {
@@ -374,8 +345,6 @@ export default {
       search_option_1: null,
       search_option_2: null,
       search_field_2: null,
-      search_option_3: null,
-      search_option_4: null,
       isPaginated: true,
       isPaginationSimple: false,
       paginationPosition: "bottom",
@@ -419,14 +388,34 @@ export default {
       );
     },
     submit() {
-      axios
-        .get("/api/artifacts")
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      this.isLoading = true;
+      this.message = "";
+      this.artifacts = [];
+      this.$v.$touch();
+      if (this.search_field_1 == null) {
+        this.isLoading = false;
+        this.submitStatus = "ERROR";
+        this.validClass = "input is-danger";
+      } else {
+        this.submitStatus = "PENDING";
+        this.validClass = "input";
+        //start search
+        this.isLoading = true;
+
+        /*let option1 = this.search_option_1;
+        let option2 = this.search_option_2;
+        let field1 = this.search_field_1;
+        let field2 = this.search_field_2;*/
+        axios
+          .get("/api/artifacts")
+          .then((response) => {
+            console.log(response);
+            this.artifacts = response.data.items;
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }
     },
 
     /*submit() {
