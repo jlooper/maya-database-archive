@@ -2,8 +2,7 @@ node_modules
 app/dist
 
 # local env files
-.env.local
-.env.*.local
+api/local.settings.json
 
 # Log files
 npm-debug.log*

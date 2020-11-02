@@ -8,7 +8,7 @@
 <script>
 import * as atlas from "azure-maps-control";
 import data from "@/assets/sites.json";
-
+import axios from "axios";
 export default {
   name: "app",
   data: () => ({
@@ -17,14 +17,14 @@ export default {
     center: [-90.128591, 16.823058],
   }),
   methods: {
-    async initMap() {
+    async initMap(key) {
       this.map = new atlas.Map("myMap", {
         center: this.center,
         zoom: this.zoom,
         view: "Auto",
         authOptions: {
           authType: "subscriptionKey",
-          subscriptionKey: process.env["VUE_APP_MAP_KEY"],
+          subscriptionKey: key,
         },
       });
       await this.buildMap();
@@ -36,15 +36,6 @@ export default {
         let mapSource = new atlas.source.DataSource();
         self.map.sources.add(mapSource);
         mapSource.add(data);
-
-        //Create a heatmap and add it to the map.
-        /*self.map.layers.add(
-          new atlas.layer.HeatMapLayer(datasource, null, {
-            radius: 10,
-            opacity: 0.8,
-          }),
-          "labels"
-        );*/
 
         let popupSource = new atlas.source.DataSource();
         self.map.sources.add(popupSource);
@@ -91,8 +82,18 @@ export default {
       });
     },
   },
-  mounted() {
-    this.initMap();
+  async mounted() {
+    await axios
+      .get("/api/mapsettings")
+      .then((response) => {
+        console.log(response);
+        let key = response.data;
+
+        this.initMap(key);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   },
   created() {
     if (this.$route.params.site) {
