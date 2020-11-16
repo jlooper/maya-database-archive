@@ -84,7 +84,7 @@ export default {
   },
   async mounted() {
     await axios
-      .get("/api/mapsettings")
+      .get("/api/map")
       .then((response) => {
         console.log(response);
         let key = response.data;

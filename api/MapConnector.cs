@@ -20,9 +20,9 @@ namespace api
             this.configuration = configuration;
 
         }
-        [FunctionName("mapsettings")]
+        [FunctionName("GetMapSettings")]
         public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "map")] HttpRequest req,
             ILogger log)
         {
             var key = configuration["VUE_APP_MAP_KEY"];

@@ -402,17 +402,27 @@ export default {
         //start search
         this.isLoading = true;
 
-        /*let option1 = this.search_option_1;
-        let option2 = this.search_option_2;
-        let field1 = this.search_field_1;
-        let field2 = this.search_field_2;*/
+        //let option1 = this.search_option_1;
+        //let option2 = this.search_option_2;
+        //let field1 = this.search_field_1;
+        //let field2 = this.search_field_2;
+
+        //let query = JSON.stringify({ Technique: field1, Material: field2 });
+
         axios
-          .get("/api/artifacts")
+          .get("/api/artifacts", {
+            params: {
+              fields: "Material:plastic",
+              limit: 20,
+            },
+          })
           .then((response) => {
+            this.isLoading = true;
             console.log(response);
             this.artifacts = response.data.items;
           })
           .catch((err) => {
+            this.isLoading = true;
             console.log(err);
           });
       }
