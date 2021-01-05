@@ -11,7 +11,7 @@
     <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.5" />
-    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.1.7" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.7" />
     <PackageReference Include="X.PagedList" Version="8.0.7" />
     <PackageReference Include="System.Interactive" Version="4.1.1" />
   </ItemGroup>

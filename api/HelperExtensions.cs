@@ -147,27 +147,7 @@ namespace MayanGlyphsApi
 
             if (string.IsNullOrWhiteSpace(orderBy)) return source;
 
-            var orderByString = string.Empty;
-
-            var orderBySplit = orderBy.Split(',');
-
-            foreach (var orderClause in orderBySplit)
-            {
-                var trimmedOrder = orderClause.Trim();
-
-                var isDesc = trimmedOrder.EndsWith(" desc");
-
-                var spaceIndeex = trimmedOrder.IndexOf(" ");
-                var propertyName = spaceIndeex == -1 ?
-                    trimmedOrder : trimmedOrder.Remove(spaceIndeex);
-
-                orderByString = orderByString +
-                    (string.IsNullOrWhiteSpace(orderByString) ? string.Empty : ", ")
-                    + propertyName
-                    + (isDesc ? " descending" : " ascending");
-            }
-
-            return source.OrderBy(orderByString);
+            return source.OrderBy(orderBy);
         }
 
         public static IQueryable<T> ApplyFilter<T>(this IQueryable<T> source, string filter)
