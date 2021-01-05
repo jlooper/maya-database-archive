@@ -144,12 +144,21 @@ namespace MayanGlyphsApi.Models
 
         [BsonElement("blev260")]
         public string Ev260 { get; set; }
+        
+        [BsonElement("blev365")]
+        public string Ev365 { get; set; }
 
         [BsonElement("locabbr")]
         public string LocAbbr { get; set; }
 
         [BsonElement("locaccessionNum")]
         public string LocAccessionNum { get; set; }
+
+        [BsonElement("locmu")]
+        public string Locmu { get; set; }
+        
+        [BsonElement("loccitystate")]
+        public string Loccitystate { get; set; }
 
         [BsonElement("blblocknotes")]
         public string BlockNotes { get; set; }
