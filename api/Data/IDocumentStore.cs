@@ -9,7 +9,7 @@ namespace MayanGlyphsApi.Data
     public interface IDocumentStore
     {
         Task<IPagedList<Artifact>> GetArtifacts(ResourceQueryParameters resourceQuery);
-        Task<List<Artifact>> GetArtifacts(int page = 0, int limit = 10);
+        Task<List<Artifact>> GetArtifacts(int page = 1, int limit = 10);
         Task<Artifact> GetArtifactById(string id);
         IQueryable<Artifact> GetArtifactsQueryable();
         Task<bool> RemoveArtifact(string id);

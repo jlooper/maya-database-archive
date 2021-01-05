@@ -35,7 +35,10 @@ namespace MayanGlyphsApi.Data
         public async Task<IPagedList<Artifact>> GetArtifacts(ResourceQueryParameters resourceQuery)
         {
             IQueryable<Artifact> queryable = this._database.GetCollection<Artifact>(COLLECTION_NAME).AsQueryable();
-            queryable = queryable.ApplySort(resourceQuery.OrderBy);
+
+            queryable = queryable
+                .ApplyFilter(resourceQuery.Filter)
+                .ApplySort(resourceQuery.OrderBy);
 
             IPagedList<Artifact> pagedResults = await queryable.ToPagedListAsync(resourceQuery.Page, resourceQuery.Limit);
 
