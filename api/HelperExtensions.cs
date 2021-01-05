@@ -170,5 +170,12 @@ namespace MayanGlyphsApi
             return source.OrderBy(orderByString);
         }
 
+        public static IQueryable<T> ApplyFilter<T>(this IQueryable<T> source, string filter)
+        {
+            if (source == null) throw new ArgumentNullException(nameof(source));
+            if (string.IsNullOrWhiteSpace(filter)) return source;
+
+            return source.Where(filter);
+        }
     }
 }

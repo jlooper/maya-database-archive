@@ -1,8 +1,8 @@
 namespace MayanGlyphsApi.Models
 {
-  public class ResourceQueryParameters
+    public class ResourceQueryParameters
     {
-        const int maxLimit = 30;        
+        const int maxLimit = 30;
         public virtual int Page { get; set; } = 1;
 
         private int _limit = 10;
@@ -14,6 +14,7 @@ namespace MayanGlyphsApi.Models
 
         public virtual string OrderBy { get; set; }
         public virtual string Fields { get; set; }
+        public virtual string Filter { get; set; }
     }
 
     public class ArtifactResourceQueryParameters : ResourceQueryParameters

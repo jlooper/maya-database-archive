@@ -25,10 +25,10 @@ namespace MayanGlyphsApi
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "artifacts")] HttpRequest req,
             ILogger log)
         {
-            
             var queryParams = new ArtifactResourceQueryParameters();
             queryParams.Fields = req.Query.ContainsKey("fields") ? req.Query["fields"].ToString() : string.Empty;
             queryParams.OrderBy = req.Query.ContainsKey("orderby") ? req.Query["orderby"].ToString() : string.Empty;
+            queryParams.Filter = req.Query.ContainsKey("filter") ? req.Query["filter"].ToString() : string.Empty;
             queryParams.Page = req.Query.ContainsKey("page") ? int.Parse(req.Query["page"]) : 1;
             queryParams.Limit = req.Query.ContainsKey("limit") ? int.Parse(req.Query["limit"]) : 10;
 
