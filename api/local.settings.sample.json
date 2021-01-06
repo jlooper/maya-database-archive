@@ -1,0 +1,14 @@
+{
+	"IsEncrypted": false,
+	"Values": {
+		"AzureWebJobsStorage": "UseDevelopmentStorage=true",
+		"FUNCTIONS_WORKER_RUNTIME": "dotnet",
+		"VUE_APP_MAP_KEY": "your-map-key",
+		"COSMOSCONNECTION": "your-db-connection-string"
+	},
+	"Host": {
+		"LocalHttpPort": 7071,
+		"CORS": "*",
+		"CORSCredentials": false
+	}
+}

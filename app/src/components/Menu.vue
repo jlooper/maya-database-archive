@@ -3,9 +3,15 @@
     <aside v-show="showMenu" class="column is-one-fifth aside is-pulled-left">
       <nav class="menu">
         <ul class="menu-list">
-          <li>
+          <!--<li>
             <router-link class="navbar-item" :to="'/profile'">
               <i class="fas fa-user"></i> My Profile
+            </router-link>
+          </li>-->
+
+          <li>
+            <router-link class="navbar-item" :to="'/map'">
+              <i class="fas fa-map"></i> Map
             </router-link>
           </li>
 
@@ -27,13 +33,13 @@ export default {
     //...mapState(["user"])
     showMenu() {
       return this.$router.app._route.name !== "home";
-    }
+    },
   },
   data: () => ({
     //currentUser: firebase.auth().currentUser,
   }),
   methods: {
     //...mapActions(['fetchUser', 'fetchStudents', 'fetchPractices']),
-  }
+  },
 };
 </script>

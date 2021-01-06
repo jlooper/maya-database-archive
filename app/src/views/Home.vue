@@ -5,13 +5,15 @@
         <div class="columns is-vcentered">
           <div class="column is-half is-offset-1 is-centered home-elements">
             <h1 class="title is-1 is-bold home-elements">Welcome!</h1>
-            <h2
-              class="subtitle is-3 home-elements"
-            >The Maya Database and Archive can help you discover Maya Glyphs</h2>
+            <h2 class="subtitle is-3 home-elements">
+              The Maya Database and Archive can help you discover Maya Glyphs
+            </h2>
 
-            <router-link class="button is-large is-link" :to="'search'">Search the Database</router-link>
+            <router-link class="button is-large is-link" :to="'search'"
+              >Search the Database</router-link
+            >
 
-            <div class="button-box">
+            <!--<div class="button-box">
               <b-button
                 class="social-button twitter"
                 @click="Auth('twitter')"
@@ -32,7 +34,7 @@
                 size="is-medium"
                 icon-left="google"
               >Login with Google</b-button>
-            </div>
+            </div>-->
           </div>
 
           <div class="column is-half is-centered">
@@ -54,8 +56,9 @@
                 </div>
                 <div class="card-text">
                   <p>
-                    Learn about the various glyphs that make up the Mayan language, how they fit
-                    together, and how they are altered depending on context.
+                    Learn about the various glyphs that make up the Mayan
+                    language, how they fit together, and how they are altered
+                    depending on context.
                   </p>
                 </div>
               </div>
@@ -68,8 +71,9 @@
                 </div>
                 <div class="card-text">
                   <p>
-                    Search for instances of glyphs using maps and tagged searches. Discover where
-                    artifacts originated and where they are currently stored.
+                    Search for instances of glyphs using maps and tagged
+                    searches. Discover where artifacts originated and where they
+                    are currently stored.
                   </p>
                 </div>
               </div>
@@ -82,8 +86,8 @@
                 </div>
                 <div class="card-text">
                   <p>
-                    Save your favorite searches by creating an account. Login, and research your
-                    areas of interest.
+                    Save your favorite searches by creating an account. Login,
+                    and research your areas of interest.
                   </p>
                 </div>
               </div>
@@ -102,8 +106,8 @@ export default {
       const redirect = `post_login_redirect_uri=/home`;
       const url = `/.auth/login/${provider}?${redirect}`;
       window.location.href = url;
-    }
-  }
+    },
+  },
 };
 </script>
 
