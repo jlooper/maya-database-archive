@@ -402,91 +402,45 @@ export default {
         //start search
         this.isLoading = true;
 
-        //let option1 = this.search_option_1;
-        //let option2 = this.search_option_2;
-        //let field1 = this.search_field_1;
-        //let field2 = this.search_field_2;
+        let option1 = this.search_option_1;
+        let option2 = this.search_option_2;
+        let field1 = this.search_field_1;
+        let field2 = this.search_field_2;
 
-        //let query = JSON.stringify({ Technique: field1, Material: field2 });
+        let filter1 = option1 + " eq " + '"' + field1 + '"';
+        let filter2 = " &" + option2 + " eq " + '"' + field2 + '"';
+
+        let filter = filter1;
+
+        if (option2 != null) {
+          filter = filter1 + filter2;
+        }
 
         axios
           .get("/api/artifacts", {
             params: {
-              fields: "Material:plastic",
-              limit: 20,
+              filter: filter,
+              limit: 10,
             },
           })
           .then((response) => {
-            this.isLoading = true;
-            console.log(response);
-            this.artifacts = response.data.items;
+            if (response.data.items.length > 0) {
+              this.isLoading = false;
+              this.submitStatus = "COMPLETE";
+              this.artifacts = response.data.items;
+            } else {
+              this.isLoading = false;
+              this.submitStatus = "COMPLETE";
+              this.message = "Sorry, no records found"
+            }
           })
           .catch((err) => {
-            this.isLoading = true;
-            console.log(err);
+            this.isLoading = false;
+            this.submitStatus = "COMPLETE";
+            this.message = err;
           });
       }
     },
-
-    /*submit() {
-      this.isLoading = true;
-      this.message = "";
-      this.artifacts = [];
-      this.$v.$touch();
-      if (this.search_field_1 == null) {
-        this.isLoading = false;
-        this.submitStatus = "ERROR";
-        this.validClass = "input is-danger";
-      } else {
-        this.submitStatus = "PENDING";
-        this.validClass = "input";
-        //start search
-        this.isLoading = true;
-
-        let option1 = this.search_option_1;
-        let option2 = this.search_option_2;
-        let field1 = this.search_field_1;
-        let option3 = this.search_option_3;
-        let option4 = this.search_option_4;
-        let field2 = this.search_field_2;
-        //$filter=material%20eq%20%27stone%27&surface%20eq%20west$top=30
-
-        (async () => {
-          this.isLoading == false;
-          var q = odata({
-            format: "json",
-            service: "https://mayan-glyphs.azurewebsites.net/odata/",
-            resources: "Artifacts",
-          });
-
-          if (option3 == null) {
-            this.artifacts = await q
-              //.top(30)
-              .filter(option1, option2, field1)
-              .get()
-              .then(function (response) {
-                let data = JSON.parse(response.body);
-                return data.value;
-              });
-          } else {
-            this.artifacts = await q
-              //.top(30)
-              .filter(option1, option2, field1)
-              .and(option3, option4, field2)
-              .get()
-              .then(function (response) {
-                let data = JSON.parse(response.body);
-                return data.value;
-              });
-          }
-        })();
-
-        setTimeout(() => {
-          this.submitStatus = "OK";
-          this.validClass = "input";
-        }, 500);
-      }
-    },*/
   },
 };
 </script>
