@@ -408,7 +408,7 @@ export default {
         let field2 = this.search_field_2;
 
         let filter1 = option1 + " eq " + '"' + field1 + '"';
-        let filter2 = " &" + option2 + " eq " + '"' + field2 + '"';
+        let filter2 = "&" + option2 + " eq " + '"' + field2 + '"';
 
         let filter = filter1;
 
@@ -431,7 +431,7 @@ export default {
             } else {
               this.isLoading = false;
               this.submitStatus = "COMPLETE";
-              this.message = "Sorry, no records found"
+              this.message = "Sorry, no records found";
             }
           })
           .catch((err) => {
