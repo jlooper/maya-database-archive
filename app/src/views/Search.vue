@@ -317,6 +317,7 @@
 <script>
 import { required } from "vuelidate/lib/validators";
 import axios from "axios";
+
 export default {
   validations: {
     search_field_1: {
@@ -407,8 +408,8 @@ export default {
         let field1 = this.search_field_1;
         let field2 = this.search_field_2;
 
-        let filter1 = option1 + " eq " + '"' + field1 + '"';
-        let filter2 = "&" + option2 + " eq " + '"' + field2 + '"';
+        let filter1 = `` + option1 + ` eq "` + field1 + `"`;
+        let filter2 = `&` + option2 + ` eq "` + field2 + `"`;
 
         let filter = filter1;
 
